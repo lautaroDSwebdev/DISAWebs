@@ -8,6 +8,12 @@ export const dataEn = {
         { id: 6, href: "#How i work", data: "How i work" },
         { id: 7, href: "#Contact me", data: "Contact me" },
     ],
+    grid_ayudarte: [
+        { id: 1, data: "Web design and development 100% aligned with your brand", img: "/design-icon.svg" },
+        { id: 2, data: "Mobile-friendly and compatible with modern screens", img: "/screens-icon.svg" },
+        { id: 3, data: "Faster loading and optimized performance", img: "/performance-icon.svg" },
+        { id: 4, data: "Scalability and full control", img: "/scale-icon.svg" }
+    ],
     destacaHeader: "!Stand out with a professional website!",
     subHeader: "Whether you need a complete website or an attractive landing page, I can help you improve your digital presence and attract more customers.",
     ayudarte: [

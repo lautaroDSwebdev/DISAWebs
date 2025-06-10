@@ -1,8 +1,4 @@
 import type { Metadata } from "next";
-import "./style.css";
-import { ThemeContext, ThemeContextProvider } from "./_context/ThemeContext";
-import { Nav } from "./_components";
-import { useContext } from "react";
 import { LanguageContextProvider } from "./_context/LanguageContext";
 
 

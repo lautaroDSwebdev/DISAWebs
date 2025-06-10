@@ -1,0 +1,94 @@
+:root {
+  --font-size_par: 1.9rem;
+  --font-size_title: 2.9rem;
+  --font-size_par_mobile: 1.4rem;
+  --font-size_title_mobile: 2.5rem;
+}
+.border-box-line {
+  position: relative;
+  border: #fff solid 0.5px;
+  border-radius: 10px;
+  padding: 33px;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover{
+    border: #5A5EFF solid 0.5px;
+
+  }
+}
+.border-box-line {
+  p{
+   text-align: center;
+  }
+  .div_img{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.blur_boxes {
+  display: flex;
+  position: absolute;
+  top: 86px;
+  left: -145px;
+  width: 141%;
+  height: 107%;
+  z-index: 2;
+  background-image: url('/blur_help_section.png');
+  background-repeat: no-repeat;
+}
+.btn_lang {
+  width: 4rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.text-blue {
+  color: #5a5eff;
+}
+.header_section {
+  display: flex;
+  margin: auto;
+  div {
+    h1 {
+      font-size: var(--font-size_title);
+    }
+    h1,
+    p {
+      color: #fff;
+    }
+    p {
+      font-size: var(--font-size_par);
+      max-width: 382px;
+      padding: 1rem;
+    }
+    img {
+      height: auto;
+      width: 405px;
+      padding-top: 8rem ;
+    }
+  }
+}
+
+.div_main {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 17rem;
+  h2,
+  p {
+    color: #fff;
+  }
+  p {
+    font-size: var(--font-size_par);
+  }
+  h2 {
+    font-size: var(--font-size_title);
+  }
+  .grid_help {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+}

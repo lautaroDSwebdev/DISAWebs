@@ -1,6 +1,7 @@
 "use client"
-import { Header, Main, Nav } from "./_components";
-import "./_components/components.css"
+import { Header, Main, Nav, Section_ventajas_negocio } from "./_components";
+import "./style.css"
+import "./_components/comp.css"
 export default function Home() {
 
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Nav></Nav>
       <Header></Header>
       <Main></Main>
+      <Section_ventajas_negocio></Section_ventajas_negocio>
     </div>
   );
 }

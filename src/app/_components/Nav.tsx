@@ -1,6 +1,5 @@
 "use client"
 import { useContext } from 'react'
-import { nav_data } from '../_mock'
 import { langCotext } from '../_context/LanguageContext'
 export const Nav = () => {
     const data = useContext(langCotext)
