@@ -1,26 +1,27 @@
-import React from 'react'
+"use client"
+import { useContext } from 'react'
 import { nav_data } from '../_mock'
-
+import { langCotext } from '../_context/LanguageContext'
 export const Nav = () => {
-
-
-
+    const data = useContext(langCotext)
     return (
-        <section className='section_nav g-lightblue-bg'>
+        <section className={`section_nav g-lightblue-bg `}>
             <nav className='g-maxwidth-page '>
                 <div>
                     <a href="">
                         <img src="/logo-pagina-png.png" alt="" />
                     </a>
                 </div>
+                <select className='btn_lang'  onChange={data?.HandleLanguage}>
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
                 {
-                    nav_data.map(e => (
+                    data?.data.nav_data.map(e => (
                         <a className='' key={e.id} href={e.href}>{e.data}</a>
                     ))
                 }
-                <div>
-                    opciones
-                </div>
+                
             </nav>
         </section>
     )
