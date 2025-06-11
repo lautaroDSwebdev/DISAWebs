@@ -7,7 +7,7 @@ export const Nav = () => {
         <section className={`section_nav g-lightblue-bg `}>
             <nav className='g-maxwidth-page '>
                 <div>
-                    <a href="">
+                    <a href="#inicio">
                         <img src="/logo-pagina-png.png" alt="" />
                     </a>
                 </div>

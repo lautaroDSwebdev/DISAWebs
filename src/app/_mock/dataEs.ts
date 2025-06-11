@@ -14,6 +14,7 @@ export const dataEs = {
         { id: 3, data: "Cárga mas rápida y optimizáda", img: "/performance-icon.svg" },
         { id: 4, data: "Escalabilidád y control totál", img: "/scale-icon.svg" }
     ],
+    destacaHeader:["¡Destacá con una web profesional!","Ya sea que necesítes un sitio web compléto o una atractíva landing page. Te ayúdo mejorár tu preséncia digital y  atraér más cliéntes"] ,
     ventajasSection: {
         titulo: "¿Por que necesíta tu negocio una pagina?",
         razones: [
@@ -22,8 +23,11 @@ export const dataEs = {
             { id: 3, titulo_razon: "Destacá del resto de negocios", sub_titulo: "En un mundo digital saturado de plantillas genéricas, tener una web hecha a medida es una inversión, no un gasto. Estos son los beneficios que puede obtener tu negocio al trabajar conmigo" },
         ]
     },
-    destacaHeader: "¡Destacá con una web profesional!",
-    subHeader: "Ya sea que necesítes un sitio web compléto o una atractíva landing page. Te ayúdo mejorár tu preséncia digital y  atraér más cliéntes",
+    regresar: "Regresar 🔼",
+    makingRealityYourProject: {
+        title: ["Haciendo realidad", "tus ideas y projectos"],
+        text_icons: ["Proyectos hechos", "Miembro amasionado", "lineas de codigo"]
+       },
     ayudarte: [
         "Como te puedo", "ayudar", "Brindo productos de calidád para los siguientes servícios"
     ]

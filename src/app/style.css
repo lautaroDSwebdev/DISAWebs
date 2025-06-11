@@ -6,6 +6,15 @@ body {
   margin: 0;
   padding: 0;
 }
+html{
+
+  scroll-behavior: smooth;
+}
+.div_btn_regresar{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  max-width: 700px;
+}
 .blur-left-header{
   position: relative;
   top: 0;
@@ -31,6 +40,9 @@ body {
 }
 .g-lightblue-bg {
   background: #5a5eff;
+}
+.g-color-text{
+  color: #5a5eff;
 }
 .g-maxwidth-page {
   max-width: 1200px;
