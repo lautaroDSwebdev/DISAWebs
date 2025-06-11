@@ -1,5 +1,5 @@
 "use client"
-import { HagoRealidadProyectos, Header, Main, Nav, Section_ventajas_negocio } from "./_components";
+import { Empecemos, HagoRealidadProyectos, Header, Main, Nav, Section_ventajas_negocio } from "./_components";
 import "./style.css"
 import "./_components/comp.css"
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Main></Main>
       <Section_ventajas_negocio></Section_ventajas_negocio>
       <HagoRealidadProyectos></HagoRealidadProyectos>
+      <Empecemos></Empecemos>
     </div>
   );
 }
