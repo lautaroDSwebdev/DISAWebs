@@ -16,9 +16,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-slick": "^0.30.3",
-    "react-switch": "^7.1.0",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^11.2.8"
+    "react-switch": "^7.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
