@@ -1,0 +1,37 @@
+.border-box-line-blue-how-work {
+    border-radius: var(--radius);
+    padding: 110px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: #4244b7 solid 2px;
+    &:hover {
+      outline: solid 5px;
+      outline-color: var(--color-blue);
+    }
+  }
+
+.section_details {
+  .section-div_details {
+    p {
+      text-align: center;
+    }
+  }
+}
+.ul_details-array {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    img {
+      height: 5rem;
+      width: 5rem;
+    }
+    p{
+        text-align: center;
+    }
+  }
+}

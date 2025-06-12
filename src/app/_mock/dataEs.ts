@@ -14,6 +14,12 @@ export const dataEs = {
         { id: 3, data: "Cárga mas rápida y optimizáda", img: "/performance-icon.svg" },
         { id: 4, data: "Escalabilidád y control totál", img: "/scale-icon.svg" }
     ],
+    carruselProyectos: [
+        {id : 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza", img: "/imagen-hotel-plaza.png"},
+        {id : 2, href: "https://webdisalvo.netlify.app/", data: "Portfolio", img: "/imagen-portfolio.png"},
+        {id : 3, href: "https://caprichoso.netlify.app/home/", data: "Pagina Caprichoso", img: "/imagen-caprichoso.png"},
+        {id : 4, href: "https://masfarmaciareplica.netlify.app/", data: "Farmacia", img: "/imagen-farmacia.webp"}
+    ],
     destacaHeader:["¡Destacá con una web profesional!","Ya sea que necesítes un sitio web compléto o una atractíva landing page. Te ayúdo mejorár tu preséncia digital y  atraér más cliéntes"] ,
     ventajasSection: {
         titulo: "¿Por que necesíta tu negocio una pagina?",
@@ -24,6 +30,16 @@ export const dataEs = {
         ]
     },
     regresar: "Regresar 🔼",
+    comoTrabajo: {
+        titulo: "Como trabajo",
+        box_titulo: "Organizacion, creatividad y tecnologia son los pilares mas importantes de mi manera de trabajar",
+        así_trabajo_array:[
+            {id: 1, img : "/analisis-ideas.svg", data: "Analisis de tus ideas"},
+            {id: 2, img : "/lapis-desarrollo-ideas.png", data: "Diseño adecuado a tus ideas"},
+            {id: 3, img : "/computer.svg", data: "Desarrollo de tus ideas"},
+            {id: 4, img : "/cohete-deploy.svg", data: "Lanzamiento de tu proyecto a internet"},
+        ] 
+    },
     makingRealityYourProject: {
         title: ["Haciendo realidad", "tus ideas y projectos"],
         text_icons: ["Proyectos hechos", "Miembro amasionado", "lineas de codigo"]

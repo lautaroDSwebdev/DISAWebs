@@ -24,6 +24,18 @@ export const dataEn = {
         ]
     },
     regresar: "Return 🔼",
+
+    comoTrabajo: {
+        titulo: "How i work",
+        box_titulo: "Organization, creativity and technology are the most important pillars of my way of working",
+        así_trabajo_array:[
+            {id: 1, img : "/analisis-ideas.svg", data: "Analysis of your ideas"},
+            {id: 2, img : "/lapis-desarrollo-ideas.png", data: "Design tailored to your ideas"},
+            {id: 3, img : "/computer.svg", data: "develop of your ideas"},
+            {id: 4, img : "/cohete-deploy.svg", data: "Deploy your projectn on the internet"},
+        ] 
+    },
+
    makingRealityYourProject: {
     title: ["Making reality ", "your ideas and projects"],
     text_icons: ["Projects Maked", "Pasionnated member", "lines of code"]

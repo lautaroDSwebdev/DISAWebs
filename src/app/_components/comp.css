@@ -102,12 +102,10 @@
 p {
   color: #fff;
   font-size: var(--font-size_par);
-  text-align: center;
 }
 h2 {
   font-size: var(--font-size_title);
   color: #fff;
-  text-align: center;
 }
 .div_center {
   display: flex;
@@ -215,3 +213,37 @@ h2 {
     }
   }
 }
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 21%;
+  min-width: 0;
+}
+.div_component{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.div_carrusel{
+  display: flex;
+  gap: 3rem;
+  margin:0 auto;
+  
+}
+.article_carrusel{
+  display: flex;
+}
+.carrusel_a{
+  a{
+    img{
+      margin: auto;
+      height: auto;
+      max-width: 400px;
+    }
+  }
+}
+
