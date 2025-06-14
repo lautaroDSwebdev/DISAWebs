@@ -5,6 +5,7 @@ import {
   HagoRealidadProyectos,
   Header,
   Main,
+  MisServicios,
   Nav,
   Proyectos,
   Section_ventajas_negocio
@@ -24,6 +25,7 @@ export default function Home() {
       <Empecemos></Empecemos>
       <Proyectos></Proyectos>
       <ComoTrabajo></ComoTrabajo>
+      <MisServicios></MisServicios>
     </div>
   );
 }
