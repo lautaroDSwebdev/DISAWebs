@@ -5,8 +5,10 @@ import { Return } from './Return'
 export const HagoRealidadProyectos = () => {
 
   const info = useContext(langCotext)
+  if(!info) return null
+  const id_comeback = info?.data.ids_component
   return (
-    <div id='Sobre Mi' className='div_making-reality-projects g-maxwidth-page' >
+    <div id={`${id_comeback[3]}`} className='div_making-reality-projects g-maxwidth-page' >
       <section className='section_img_reality-projects'>
         <img src="/imagen_hago-realidad-tus-ideas.png" alt="imagen" />
       </section>

@@ -60,8 +60,10 @@ export const Header = () => {
 
     }, [])
     const info = useContext(langCotext)
+    if(!info) return null
+    const data = info.data.ids_component
     return (
-        <section id='inicio' className='header_section g-maxwidth-page '>
+        <section id={data[0]} className='header_section g-maxwidth-page '>
             <div className='texto_div'>
                 <h1 className='texto_animado'>{info?.data.destacaHeader[0]}</h1>
                 <p className='texto_animado2'>{info?.data.destacaHeader[1]}</p>

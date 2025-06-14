@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { langCotext } from '../_context/LanguageContext'
 
 export const Empecemos = () => {
+    const info = useContext(langCotext)
+    if (!info) return null
+    const empecemos = info.data.comencemos
+    const empecemos_id = info.data.ids_component
     return (
-        <div id='Empecemos' className='div_comencemos g-maxwidth-page'>
+        <div id={`${empecemos_id[4]}`} className='div_comencemos g-maxwidth-page'>
             <section>
                 <div className='titulo'>
-                    <h2>Empecemos a hoy a trabajar juntos</h2>
+                    <h2>{empecemos.titulo}</h2>
                 </div>
                 <div className='redes'>
-                    <a href='https://api.whatsapp.com/send?phone=5492494379804' target='_blank' className=''>mi whatsapp &gt;</a>
-                    <a href='https://www.instagram.com/lautarodisalvo_frontdev?igsh=MXJkc3hjdDJ2amFseg==' target='_blank' className=''>mi instagram &gt;</a>
+                    {
+                        empecemos.array_redes.map(e => (
+                            <a key={e.id} href={e.href} target='_blank' className=''>{e.data} &gt;</a>
+                        ))
+                    }
                 </div>
             </section>
         </div>

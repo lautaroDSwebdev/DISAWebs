@@ -3,9 +3,10 @@ import { langCotext } from '../_context/LanguageContext'
 
 export const Section_ventajas_negocio = () => {
     const info = useContext(langCotext)
-
+    if(!info) return null
+    const data = info.data.ids_component
     return (
-        <section id='¿Por que una web?' className='div_center'>
+        <section id={data[2]} className='div_center'>
             <h2>{info?.data.ventajasSection.titulo}</h2>
             <div className='div_ventajas'>
                 {info?.data.ventajasSection.razones.map(e => (
