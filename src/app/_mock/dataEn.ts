@@ -1,5 +1,5 @@
 export const dataEn = {
-    ids_component: ["Begin","Help-you", "¿Why-a-website?", "About-me", "Lets begin", "Projects", "How-i-work", "Contact-me"],
+    ids_component: ["Begin","Help-you", "¿Why-a-website?", "About-me", "Lets begin", "Projects", "How-i-work", "My-Services", "Contact-me"],
     nav_data: [
         { id: 1, href: "#Help-you", data: "Help-you" },
         { id: 2, href: "#¿Why-a-website?", data: "¿Why a website?" },
@@ -7,7 +7,8 @@ export const dataEn = {
         { id: 4, href: "#Lets begin", data: "Lets begin" },
         { id: 5, href: "#Projects", data: "Projects" },
         { id: 6, href: "#How-i-work", data: "How i work" },
-        { id: 7, href: "#Contact-me", data: "Contact-me" },
+        { id: 7, href: "#My-Services", data: "My Services" },
+        { id: 8, href: "#Contact-me", data: "Contact-me" },
     ],
     grid_ayudarte: [
         { id: 1, data: "Web design and development 100% aligned with your brand", img: "/design-icon.svg" },

@@ -7,9 +7,10 @@ export const MisServicios = () => {
   const info = useContext(langCotext)
   if (!info) return null
   const servicios = info.data.misServicios
-  const empecemos_redirigir = info.data.ids_component
+  const empecemos_redirigir = info.data.ids_component,
+    id_services = info.data.ids_component
   return (
-    <div className='g-maxwidth-page '>
+    <div id={`${id_services[7]}`} className='g-maxwidth-page '>
       <section>
         <h2>{servicios.titulo}</h2>
         <p className='g-subtitle-texts'>{servicios.sub_titulo}</p>
