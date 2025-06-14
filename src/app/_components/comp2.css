@@ -145,7 +145,10 @@
   color: #fff;
   text-decoration: underline;
   text-underline-offset: 4px;
-  text-decoration-color: #f9f9f9;
+  &:hover{
+    color: var(--color-blue);
+    
+  }
 }
 
 .tooltip {
