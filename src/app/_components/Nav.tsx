@@ -23,6 +23,7 @@ export const Nav = () => {
                 from: "end"
             } // 0.05 seconds between each
         });
+       
     }, [])
     return (
         <section className={`section_nav g-lightblue-bg `}>

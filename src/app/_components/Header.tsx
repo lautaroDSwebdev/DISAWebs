@@ -9,7 +9,7 @@ import { SplitText } from "gsap/SplitText";
 export const Header = () => {
     gsap.registerPlugin(useGSAP, SplitText);
 
-    
+
     useEffect(() => {
         let texto_div = SplitText.create(".nav_a", {
             type: "chars,words "
@@ -18,7 +18,7 @@ export const Header = () => {
             y: 50,       // animate from 100px below
             duration: 1,
             autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
-            stagger:{
+            stagger: {
                 amount: .8,
                 from: "end"
             } // 0.05 seconds between each
@@ -32,6 +32,14 @@ export const Header = () => {
         //         start: 150
         //     }
         // })
+        gsap.from(".blur-blue-left-header", {
+            opacity: 0,
+            duration: 2.5,
+            scrollTrigger: {
+                trigger: ".texto_animado",
+                start: 150
+            }
+        })
         gsap.from(".texto_animado", {
             opacity: 0,
             duration: 2.5,
@@ -60,17 +68,21 @@ export const Header = () => {
 
     }, [])
     const info = useContext(langCotext)
-    if(!info) return null
+    if (!info) return null
     const data = info.data.ids_component
     return (
-        <section id={data[0]} className='header_section g-maxwidth-page '>
-            <div className='texto_div'>
-                <h1 className='texto_animado'>{info?.data.destacaHeader[0]}</h1>
-                <p className='texto_animado2'>{info?.data.destacaHeader[1]}</p>
-            </div>
-            <div>
-                <img className='image' src="/logo-pagina-png.png" alt="imagen" />
-            </div>
-        </section>
+        <article>
+            <div className='blur-blue-left-header'></div>
+
+            <section id={data[0]} className='header_section g-maxwidth-page '>
+                <div className='texto_div'>
+                    <h1 className='texto_animado'>{info?.data.destacaHeader[0]}</h1>
+                    <p className='texto_animado2'>{info?.data.destacaHeader[1]}</p>
+                </div>
+                <div>
+                    <img className='image' src="/logo-pagina-png.png" alt="imagen" />
+                </div>
+            </section>
+        </article>
     )
 }

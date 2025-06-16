@@ -5,9 +5,10 @@ export const FormComponent = () => {
 
 const info = useContext(langCotext)
     if (!info) return null
-    const form_info = info.data.form
+    const form_info = info.data.form,
+    id_contact = info.data.ids_component
     return (
-        <div className='g-maxwidth-page'>
+        <div id={id_contact[8]} className='g-maxwidth-page'>
             <h2>Consultanos</h2>
             <form className=' border-box-line-blue-form blur-blue-how-work' action="">
                 <label htmlFor="nombre">{form_info.label[0]}</label>

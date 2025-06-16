@@ -1,22 +1,40 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
-
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
 export const Section_ventajas_negocio = () => {
+    gsap.registerPlugin(useGSAP, SplitText);
     const info = useContext(langCotext)
-    if(!info) return null
+    if (!info) return null
     const data = info.data.ids_component
-    return (
-        <section id={data[2]} className='div_center'>
-            <h2>{info?.data.ventajasSection.titulo}</h2>
-            <div className='div_ventajas'>
-                {info?.data.ventajasSection.razones.map(e => (
-                    <ul className='border-box-line-blue g-maxwidth-page ul_ventajas ' key={e.id}>
-                        <b>{e.titulo_razon}</b>
-                        <p>{e.sub_titulo}</p>
-                    </ul>
-                ))}
+    useEffect(()=> {
+        gsap.from(".ball-blur-purple", {
+            opacity: 0,
+            duration: 2.5,
+            scrollTrigger: {
+                trigger: ".ball-blur-purple",
+                start: 150
+            }
+        })
 
-            </div>
-        </section>
+    },[])
+    return (
+        <article className='article_ventajas'>
+            <div className='ball-blur-purple'></div>
+
+            <section id={data[2]} className='div_center section_ventajas'>
+                <h2>{info?.data.ventajasSection.titulo}</h2>
+                <div className='div_ventajas'>
+                    {info?.data.ventajasSection.razones.map(e => (
+                        <ul className='border-box-line-blue g-maxwidth-page ul_ventajas ' key={e.id}>
+                            <b>{e.titulo_razon}</b>
+                            <p>{e.sub_titulo}</p>
+                        </ul>
+                    ))}
+
+                </div>
+            </section>
+        </article>
     )
 }

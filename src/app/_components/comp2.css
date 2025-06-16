@@ -37,6 +37,7 @@
     outline-color: var(--color-blue);
   }
 }
+
 .blur-blue-how-work {
   z-index: 999;
   background-image: url('/blur-blue-big.png');
