@@ -11,7 +11,7 @@ export const Header = () => {
 
     
     useEffect(() => {
-        let texto_div = SplitText.create(".texto_div", {
+        let texto_div = SplitText.create(".nav_a", {
             type: "chars,words "
         });
         gsap.from(texto_div.chars, {

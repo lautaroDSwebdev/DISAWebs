@@ -13,7 +13,7 @@ export const Main = () => {
             <section className='grid_help'>
                 {
                     info?.data.grid_ayudarte.map(e => (
-                        <div className='border-box-line-white size_box' key={e.id}>
+                        <div className='border-box-line-white size_box ' key={e.id}>
                             <div className='blur_boxes'></div>
 
                                 <p className='g-subtitle-texts'>{e.data}</p>

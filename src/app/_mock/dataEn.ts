@@ -38,7 +38,7 @@ export const dataEn = {
         sub_titulo: "I provide web solutions for all types of clients and markets",
         titulo_ultimo: "Whether you need a full website or an attractive landing page. I help-you improve your digital presence, attract more clients, and increase your sales.",
         titulos_servicios: ["Basic Plan", "Commercial Plan", "Custom Plan"],
-        precios: ["250 USD", "350 USD", "450 USD"],
+        precios: ["$250 USD", "$350 USD", "$450 USD"],
         sub_titulo_servicio: ["split into two payments", "Everything from the basic plan, plus..."],
         plan_basico: [
             { id: 1, titulo: "Single page" },
@@ -77,7 +77,12 @@ export const dataEn = {
             {id: 4, img : "/cohete-deploy.svg", data: "Deploy your projects on the internet"},
         ] 
     },
-
+    form: {
+        label: ["Your full name", "Your email", "Your phone", "Plan of interest", "More about it"],
+        opcions: ["basic plan", "comertial plan", "custom plan"],
+        textArea: "Tell me more"
+    },
+    
    makingRealityYourProject: {
     title: ["Making reality ", "your ideas and projects"],
     text_icons: ["Projects Maked", "Pasionnated member", "lines of code"]

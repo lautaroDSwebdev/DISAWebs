@@ -34,6 +34,14 @@ p{
   margin: 5px;
   /* padding: 1rem; */
 }
+.g-element-scale-transition{
+  transform: scale(0.9, 0.9);
+  transition: all .2s ease-in-out;
+  &:hover{
+    transform: scale(1.0, 1.0);
+    
+  }
+}
 .g-borderblue {
   border: #89a1ff solid 2px;
 }
@@ -48,6 +56,9 @@ p{
 }
 .g-maxwidth-page {
   max-width: 1400px;
+  @media (width < 780px) {
+    max-width: 1000px;
+  }
   margin: auto;
 }
 .section_nav {
@@ -84,4 +95,11 @@ p{
 a {
   color: #fff;
   text-decoration: none;
+  transition: all .1s ease-in;
+  &:hover{
+    color: #c9c4c4;
+  }
+}
+.nav_a{
+  
 }

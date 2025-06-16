@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { langCotext } from '../_context/LanguageContext'
+import { FaSquareInstagram, FaSquareWhatsapp } from 'react-icons/fa6'
 
 export const Empecemos = () => {
     const info = useContext(langCotext)
@@ -15,7 +16,12 @@ export const Empecemos = () => {
                 <div className='redes'>
                     {
                         empecemos.array_redes.map(e => (
-                            <a key={e.id} href={e.href} target='_blank' className=''>{e.data} &gt;</a>
+                            <a className='g-element-scale-transition'  key={e.id} href={e.href} target='_blank' >{e.data}
+
+                                {e.data === "mi whatsapp" ? <FaSquareWhatsapp /> : <FaSquareInstagram />}
+
+
+                            </a>
                         ))
                     }
                 </div>

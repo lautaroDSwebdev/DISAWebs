@@ -10,7 +10,7 @@ export const Section_ventajas_negocio = () => {
             <h2>{info?.data.ventajasSection.titulo}</h2>
             <div className='div_ventajas'>
                 {info?.data.ventajasSection.razones.map(e => (
-                    <ul className='border-box-line-blue g-maxwidth-page ul_ventajas' key={e.id}>
+                    <ul className='border-box-line-blue g-maxwidth-page ul_ventajas ' key={e.id}>
                         <b>{e.titulo_razon}</b>
                         <p>{e.sub_titulo}</p>
                     </ul>
