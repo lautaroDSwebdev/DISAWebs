@@ -28,7 +28,7 @@ export const dataEs = {
         sub_titulo: "Proporciono soluciónes web para todo típo de clientes y mercados",
         titulo_ultimo: "Ya sea que necesites un sitio web completo o una atractiva landing page. Te ayudo a mejorar tu presencia digital, atraer más clientes, aumentar tus ventas.",
         titulos_servicios: ["Plan Basico", "Plan Comercial", "A Medida"],
-        precios: ["250 USD", "350 USD", "450 USD"],
+        precios: ["$250 ARS", "$350 ARS", "$450 ARS"],
         sub_titulo_servicio: ["dividido en dos pagos", "Lo del plan básico, plus..."],
         plan_basico: [
             { id: 1, titulo: "Pagina única", },
@@ -86,6 +86,11 @@ export const dataEs = {
     makingRealityYourProject: {
         title: ["Haciendo realidad", "tus ideas y projectos"],
         text_icons: ["Proyectos hechos", "Miembro apasionado", "Lineas de codigo"]
+    },
+    form: {
+        label: ["Tu nombre y apellido", "Tu email", "Tu telefono", "Plan de interes", "Mas al respecto"],
+        opcions: ["plan basico", "plan comercial", "a medida"],
+        textArea: "Dime mas detalles"
     },
     ayudarte: [
         "Como te puedo", "ayudar", "Brindo productos de calidad para los siguientes servicios."

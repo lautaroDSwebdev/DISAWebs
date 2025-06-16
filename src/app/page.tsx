@@ -2,6 +2,7 @@
 import {
   ComoTrabajo,
   Empecemos,
+  FormComponent,
   HagoRealidadProyectos,
   Header,
   Main,
@@ -26,6 +27,7 @@ export default function Home() {
       <Proyectos></Proyectos>
       <ComoTrabajo></ComoTrabajo>
       <MisServicios></MisServicios>
+      <FormComponent></FormComponent>
     </div>
   );
 }

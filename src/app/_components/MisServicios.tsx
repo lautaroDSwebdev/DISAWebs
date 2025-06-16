@@ -48,7 +48,7 @@ export const MisServicios = () => {
               </div>
             </div> */}
 
-            <a href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+            <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
         <div className='border-box-line-blue-my-services'>
@@ -65,7 +65,7 @@ export const MisServicios = () => {
                 </div>
               ))
             }
-            <a href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+            <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
 
@@ -83,7 +83,7 @@ export const MisServicios = () => {
                 </div>
               ))
             }
-            <a href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+            <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
 

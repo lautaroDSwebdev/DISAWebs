@@ -14,6 +14,17 @@ html {
   font-weight: bolder;
   max-width: 700px;
 }
+.blur-blue-left-header {
+  z-index: 000;
+  background-image: url("/blur-left-header.svg");
+  background-position: -33rem -61rem;
+  background-repeat: no-repeat;
+  background-size: 146rem 2336px;
+  width: 94%;
+  height: 58%;
+  position: absolute;
+  top: 0;
+}
 .blur-left-header {
   position: relative;
   top: 0;
@@ -30,9 +41,16 @@ html {
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
-p{
+p {
   margin: 5px;
   /* padding: 1rem; */
+}
+.g-element-scale-transition {
+  transform: scale(0.9, 0.9);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1, 1);
+  }
 }
 .g-borderblue {
   border: #89a1ff solid 2px;
@@ -48,6 +66,9 @@ p{
 }
 .g-maxwidth-page {
   max-width: 1400px;
+  @media (width < 780px) {
+    max-width: 1000px;
+  }
   margin: auto;
 }
 .section_nav {
@@ -55,6 +76,7 @@ p{
   bottom: 0;
   position: fixed;
   width: 13rem;
+  z-index: 999;
   @media (width < 900px) {
     display: none;
   }
@@ -84,4 +106,10 @@ p{
 a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.1s ease-in;
+  &:hover {
+    color: #c9c4c4;
+  }
+}
+.nav_a {
 }
