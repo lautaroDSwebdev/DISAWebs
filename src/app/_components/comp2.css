@@ -100,6 +100,12 @@
     }
   }
 }
+.section_title_info_servicios >*{
+  padding: 2rem;
+  /* @media (width < 900px) {
+    
+  } */
+}
 .grid_services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -259,7 +265,9 @@
     transform: translateY(-2px);
   }
 }
-
+.div_form{
+  padding: 2rem;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -288,8 +296,9 @@ form {
     &:hover{
       background: var(--color-blue);
     }
+    
   }
-
+  
   button{
     outline: solid 5px;
     outline-color: var(--color-blue);
@@ -309,4 +318,5 @@ form {
       background-color: var(--color-blue);
     }
   }
+  
 }

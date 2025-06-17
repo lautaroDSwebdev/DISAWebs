@@ -11,7 +11,7 @@ export const MisServicios = () => {
     id_services = info.data.ids_component
   return (
     <div id={`${id_services[7]}`} className='g-maxwidth-page '>
-      <section>
+      <section className='section_title_info_servicios'>
         <h2>{servicios.titulo}</h2>
         <p className='g-subtitle-texts'>{servicios.sub_titulo}</p>
         <p className='g-subtitle-texts'>{servicios.titulo_ultimo}</p>
@@ -19,7 +19,7 @@ export const MisServicios = () => {
 
 
 
-      
+
       <section className='grid_services'>
         <div className='border-box-line-blue-my-services'>
           <div className='g-blur-blue-services'></div>
