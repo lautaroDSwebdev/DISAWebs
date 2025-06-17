@@ -73,7 +73,7 @@ export const Header = () => {
     return (
         <article>
             {/* <div className='blur-blue-left-header '></div> */}
-            {/* <div className='ball-blur-purple-right-header '></div> */}
+            <div className='ball-blur-purple-right-header '></div>
 
             <section id={data[0]} className='header_section g-maxwidth-page '>
                 <div className='texto_div'>

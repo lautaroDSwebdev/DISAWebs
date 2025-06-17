@@ -209,6 +209,15 @@ h2 {
   height: 57%;
   position: absolute;
   top: 0;
+  @media (width < 900px) {
+    background-position: -5%;
+    background-repeat: no-repeat;
+    background-size: 61rem;
+    width: 99%;
+    height: 66%;
+    position: absolute;
+    top: 0;
+  }
 }
 .grid_help {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
