@@ -16,6 +16,10 @@ export const MisServicios = () => {
         <p className='g-subtitle-texts'>{servicios.sub_titulo}</p>
         <p className='g-subtitle-texts'>{servicios.titulo_ultimo}</p>
       </section>
+
+
+
+      
       <section className='grid_services'>
         <div className='border-box-line-blue-my-services'>
           <div className='g-blur-blue-services'></div>
@@ -39,15 +43,6 @@ export const MisServicios = () => {
                 </div>
               ))
             }
-            {/* <div className="container">
-              <span className="hover-me">Hover me !</span>
-              <div className="tooltip">
-                <p>mkbmfdkbmfdkmbkfdmbkfkf
-                  bdmbkdfbkmfdkbmdk
-                  bmfdnhvdfvdfvdfvdfgngh</p>
-              </div>
-            </div> */}
-
             <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>

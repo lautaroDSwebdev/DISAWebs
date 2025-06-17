@@ -5,7 +5,7 @@
   --font-size_par_mobile: 1.4rem;
   --font-size_title_mobile: 2.5rem;
   --color-blue: #5a5eff;
-  --color-bg:#040e32;
+  --color-bg: #040e32;
   --radius: 20px;
 }
 .border-box-line-white {
@@ -35,6 +35,7 @@
   justify-content: end;
   padding: 3rem;
   width: 100%;
+  z-index: 999;
 }
 .border-box-line-blue {
   position: relative;
@@ -56,6 +57,11 @@
   .div_img {
     display: flex;
     justify-content: center;
+    img {
+      width: 71px;
+      height: auto;
+      margin: 33px;
+    }
   }
 }
 
@@ -94,19 +100,26 @@
 .image {
 }
 .header_section {
-  display: flex;
   margin: auto;
+  display: flex;
+  @media (width< 900px) {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
   div {
     h1 {
       font-size: var(--font-size_title);
     }
     h1,
     p {
-      color: #fff;
+      color: #ffffff;
+      @media (width< 900px) {
+        text-align: center;
+      }
     }
     p {
       font-size: var(--font-size_par);
-      max-width: 516px;
+      /* max-width: 516px; */
       padding: 1rem;
     }
     img {
@@ -140,9 +153,15 @@ h2 {
   grid-template-columns: repeat(2rem, 1fr);
   gap: 3rem;
   z-index: 999;
+  padding: 1.5rem;
+  width: 59%;
 }
-.section_ventajas{
+.section_ventajas {
   position: relative;
+  h2{
+    text-align: center;
+    padding: 1rem;
+  }
 }
 .ul_ventajas {
   padding: 4rem;
@@ -166,28 +185,41 @@ h2 {
     max-width: 700px;
   }
 }
-.article_ventajas{
+.article_ventajas {
   position: relative;
 }
 .ball-blur-purple {
   z-index: 0;
-  background-image: url("/ball-bluer-purple.svg");
-  background-position: -21rem 15rem;
+  background-image: url('/ball-bluer-purple.svg');
+  background-position: -21rem 3rem;
   background-repeat: no-repeat;
-  background-size: 91rem;
+  background-size: contain;
   width: 75%;
   height: 121%;
   position: absolute;
   top: 45rem;
 }
+.ball-blur-purple-right-header {
+  z-index: 0;
+  background-image: url('/ball-blur-purple-right-header.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 63rem;
+  width: 99%;
+  height: 57%;
+  position: absolute;
+  top: 0;
+}
 .grid_help {
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  gap: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 6rem;
+  margin: 10rem;
   display: grid;
+  width: 69%;
 }
 
 .div_making-reality-projects {
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -203,7 +235,7 @@ h2 {
 .section_stats_about-me {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 73%;
   i {
     color: var(--color-blue);
   }
@@ -223,7 +255,7 @@ h2 {
   }
 }
 .blur-ball-comencecemos {
-  background-image: url("/empecemos-blue-ball.svg");
+  background-image: url('/empecemos-blue-ball.svg');
   background-position: 93rem -36rem;
   background-repeat: no-repeat;
   background-size: 89rem 2336px;
@@ -231,16 +263,25 @@ h2 {
   height: 217%;
   position: absolute;
   top: -21rem;
-  z-index: 000;
+  z-index: 0;
+}
+.section_data_comencemos {
+  padding-top: 9rem;
+  @media (width <900px) {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 }
 .div_comencemos {
-  z-index: 999;
   padding: 3rem;
   background-image: url('/cuadro-negro-empecemos.png');
-  height: 30vh;
+  height: 43vh;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 999;
   section {
     display: flex;
     justify-content: space-between;
@@ -253,7 +294,6 @@ h2 {
       gap: 2rem;
       a {
         font-size: 2rem;
-        /* border: #fff solid 2px; */
         outline: #fff solid 3px;
         cursor: pointer;
         border-radius: var(--radius);
@@ -265,10 +305,20 @@ h2 {
       }
     }
   }
+  @media (width < 900px) {
+    background-image: url('/empecemos-img-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    height: 43vh;
+    padding: 3rem;
+    
+  }
 }
-.section_comencemos{
+.section_comencemos {
   position: relative;
-  z-index: 999;
+  padding: 2rem;
+  /* z-index: 999; */
 }
 .embla {
   overflow: hidden;

@@ -15,13 +15,13 @@ html {
   max-width: 700px;
 }
 .blur-blue-left-header {
-  z-index: 000;
-  background-image: url("/blur-left-header.svg");
-  background-position: -33rem -61rem;
+  z-index: 0;
+  background-image: url('/blur-left-header.svg');
+  background-position: left;
   background-repeat: no-repeat;
-  background-size: 146rem 2336px;
-  width: 94%;
-  height: 58%;
+  background-size: 91rem;
+  width: 60%;
+  height: 64%;
   position: absolute;
   top: 0;
 }
@@ -48,6 +48,8 @@ p {
 .g-element-scale-transition {
   transform: scale(0.9, 0.9);
   transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
   &:hover {
     transform: scale(1, 1);
   }
@@ -110,6 +112,10 @@ a {
   &:hover {
     color: #c9c4c4;
   }
+}
+.div_ayudarte {
+  text-align: center;
+  padding: 1rem;
 }
 .nav_a {
 }

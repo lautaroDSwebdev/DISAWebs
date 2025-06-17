@@ -1,4 +1,4 @@
-export * from './Ayudarte';
+export * from './MainAyudarte';
 export * from './ComoTrabajo';
 export * from './Empecemos';
 export * from './FormComponent';
@@ -8,4 +8,4 @@ export * from './MisServicios';
 export * from './Nav';
 export * from './Proyectos';
 export * from './Return';
-export * from './Section_ventajas_negocio';
+export * from './VentajasNegocio';
