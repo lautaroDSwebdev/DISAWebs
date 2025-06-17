@@ -2,6 +2,7 @@
 import {
   ComoTrabajo,
   Empecemos,
+  FooterComponent,
   FormComponent,
   HagoRealidadProyectos,
   Header,
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <div className=" ">
+     
       <Nav></Nav>
       <Header></Header>
       <Main></Main>
@@ -28,6 +30,7 @@ export default function Home() {
       <ComoTrabajo></ComoTrabajo>
       <MisServicios></MisServicios>
       <FormComponent></FormComponent>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }
