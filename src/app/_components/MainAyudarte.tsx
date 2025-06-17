@@ -21,7 +21,7 @@ export const Main = () => {
         })
     },[])
     return (
-        <div id={data[1]} className='div_center g-maxwidth-page'>
+        <div id={data[1]} className='div_center g-maxwidth-page div_ayudarte'>
             <h2>¿{info?.data.ayudarte[0]} <i className='text-blue'>{info?.data.ayudarte[1]}</i>?</h2>
             <p className='g-subtitle-texts'>{info?.data.ayudarte[2]}</p>
             <section className='grid_help'>

@@ -3,7 +3,7 @@ import { langCotext } from '../_context/LanguageContext'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
-export const Section_ventajas_negocio = () => {
+export const VentajasNegocio = () => {
     gsap.registerPlugin(useGSAP, SplitText);
     const info = useContext(langCotext)
     if (!info) return null
@@ -20,14 +20,14 @@ export const Section_ventajas_negocio = () => {
 
     },[])
     return (
-        <article className='article_ventajas'>
+        <article className='article_ventajas '>
             <div className='ball-blur-purple'></div>
 
-            <section id={data[2]} className='div_center section_ventajas'>
+            <section id={data[2]} className='div_center section_ventajas g-maxwidth-page'>
                 <h2>{info?.data.ventajasSection.titulo}</h2>
                 <div className='div_ventajas'>
                     {info?.data.ventajasSection.razones.map(e => (
-                        <ul className='border-box-line-blue g-maxwidth-page ul_ventajas ' key={e.id}>
+                        <ul className='border-box-line-blue  ul_ventajas ' key={e.id}>
                             <b>{e.titulo_razon}</b>
                             <p>{e.sub_titulo}</p>
                         </ul>

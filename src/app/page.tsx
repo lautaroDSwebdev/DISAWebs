@@ -9,7 +9,7 @@ import {
   MisServicios,
   Nav,
   Proyectos,
-  Section_ventajas_negocio
+  VentajasNegocio,
 } from "./_components";
 import "./style.css"
 import "./_components/comp.css"
@@ -21,7 +21,7 @@ export default function Home() {
       <Nav></Nav>
       <Header></Header>
       <Main></Main>
-      <Section_ventajas_negocio></Section_ventajas_negocio>
+      <VentajasNegocio></VentajasNegocio>
       <HagoRealidadProyectos></HagoRealidadProyectos>
       <Empecemos></Empecemos>
       <Proyectos></Proyectos>

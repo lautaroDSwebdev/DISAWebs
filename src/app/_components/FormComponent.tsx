@@ -8,9 +8,9 @@ const info = useContext(langCotext)
     const form_info = info.data.form,
     id_contact = info.data.ids_component
     return (
-        <div id={id_contact[8]} className='g-maxwidth-page'>
+        <div id={id_contact[8]} className='g-maxwidth-page div_form'>
             <h2>Consultanos</h2>
-            <form className=' border-box-line-blue-form blur-blue-how-work' action="">
+            <form className='border-box-line-blue-form blur-blue-how-work' action="">
                 <label htmlFor="nombre">{form_info.label[0]}</label>
                 <input id='nombre' type="text" />
                 <label htmlFor="mail">{form_info.label[1]}</label>

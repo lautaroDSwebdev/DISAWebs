@@ -33,7 +33,7 @@ export const Header = () => {
         //     }
         // })
         gsap.from(".blur-blue-left-header", {
-            opacity: 0,
+            // opacity: 0,
             duration: 2.5,
             scrollTrigger: {
                 trigger: ".texto_animado",
@@ -41,7 +41,7 @@ export const Header = () => {
             }
         })
         gsap.from(".texto_animado", {
-            opacity: 0,
+            // opacity: 0,
             duration: 2.5,
             scrollTrigger: {
                 trigger: ".texto_animado",
@@ -72,7 +72,8 @@ export const Header = () => {
     const data = info.data.ids_component
     return (
         <article>
-            <div className='blur-blue-left-header'></div>
+            {/* <div className='blur-blue-left-header '></div> */}
+            {/* <div className='ball-blur-purple-right-header '></div> */}
 
             <section id={data[0]} className='header_section g-maxwidth-page '>
                 <div className='texto_div'>

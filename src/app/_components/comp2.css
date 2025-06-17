@@ -10,13 +10,21 @@
 .border-box-line-blue-how-work {
   border-radius: var(--radius);
   position: relative;
-  padding: 110px;
+  /* padding: 110px; */
+  margin: 2rem;
   box-sizing: border-box;
   cursor: pointer;
   outline: #4244b7 solid 2px;
   &:hover {
     outline: solid 5px;
     outline-color: var(--color-blue);
+  }
+}
+.div_how-work{
+  @media (width < 900px) {
+    display: flex;
+    justify-content: center;
+    
   }
 }
 
@@ -27,8 +35,6 @@
   box-sizing: border-box;
   cursor: pointer;
   outline: #ffffff solid 2px;
-  /* height: fit-content; */
-  /* min-height: 40vh; */
   min-width: 27rem;
   height: 59rem;
   z-index: 999;
@@ -44,7 +50,7 @@
   background-position: center -34rem;
   background-repeat: no-repeat;
   background-size: 79rem;
-  width: 87%;
+  width: 100%;
   height: 40%;
   background-position-x: center;
   position: absolute;
@@ -66,18 +72,25 @@
   .section-div_details {
     p {
       text-align: center;
+      padding: 5rem;
     }
   }
 }
 .ul_details-array {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2rem;
+  @media (width < 900px) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
   div {
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding: 2rem;
     img {
       height: 5rem;
       width: 5rem;
@@ -87,12 +100,21 @@
     }
   }
 }
+.section_title_info_servicios >*{
+  padding: 2rem;
+  /* @media (width < 900px) {
+    
+  } */
+}
 .grid_services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* display: flex;
-  justify-content: space-between; */
   gap: 3rem;
+  @media (width < 900px) {
+    padding: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 .div_ul-services {
   padding: 4rem 0 0 3rem;
@@ -243,7 +265,9 @@
     transform: translateY(-2px);
   }
 }
-
+.div_form{
+  padding: 2rem;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -258,7 +282,7 @@ form {
   overflow: hidden;
   border-radius: var(--radius);
   box-sizing: border-box;
-  height: 89vh;
+  height: 64rem;
   outline: solid 5px;
   outline-color: var(--color-blue);
   input, label, button, select, textarea{
@@ -272,8 +296,9 @@ form {
     &:hover{
       background: var(--color-blue);
     }
+    
   }
-
+  
   button{
     outline: solid 5px;
     outline-color: var(--color-blue);
@@ -293,4 +318,5 @@ form {
       background-color: var(--color-blue);
     }
   }
+  
 }
