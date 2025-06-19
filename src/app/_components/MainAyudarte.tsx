@@ -24,7 +24,7 @@ export const Main = () => {
     }, [])
     return (
 
-        <div id={data[1]} className='div_center g-maxwidth-page div_ayudarte'>
+        <div id={data[1]} className='div_center g-maxwidth-page div_ayudarte g-padding-top-sections'>
             <h2>¿{info?.data.ayudarte[0]} <i className='text-blue'>{info?.data.ayudarte[1]}</i>?</h2>
             <p className='g-subtitle-texts'>{info?.data.ayudarte[2]}</p>
             <section className='grid_help'>
@@ -48,7 +48,7 @@ export const Main = () => {
                 {
                     info?.data.grid_ayudarte.map(e => (
                         
-                            <div className='border-box-line-white size_box inner-element' key={e.id}>
+                            <div className='border-box-line-white size_box inner-element g-card-animated-mobile' key={e.id}>
                                 <div className='blur_boxes'></div>
 
                                 <p className='g-subtitle-texts'>{e.data}</p>
@@ -60,7 +60,7 @@ export const Main = () => {
                     ))
                 }
             </section>
-            <Return />
+            {/* <Return /> */}
         </div>
     )
 }

@@ -8,9 +8,17 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.g-padding-top-sections{
+  padding-top: 17rem;
+}
 .g-card-animated-desk{
   @media (width <900px) {
     display: none;
+  }
+}
+.g-card-animated-mobile{
+  @media (width > 900px) {
+    display: none !important;
   }
 }
 .div_btn_regresar {
@@ -119,7 +127,38 @@ a {
 }
 .div_ayudarte {
   text-align: center;
-  padding: 1rem;
 }
 .nav_a {
+}
+/* Estilos flecha arriba */
+.arrow_style{
+  position: fixed;
+  top: 46rem;
+  right: 0px;
+  svg{
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    backdrop-filter: blur(3px);
+  }
+}
+      
+.g-scroll-animated{
+  view-timeline-name: --arrow ;
+  view-timeline-axis: block ;
+  animation-timeline: --arrow;
+  animation-name: animacion_scroll;
+  animation-range: entry 63% cover 1000%;
+  animation-fill-mode:both ;
+}
+
+@keyframes animacion_scroll {
+  from{
+    opacity: 0%;
+    cursor: default;
+  }to{
+    
+    opacity: 100%;
+    cursor: pointer;
+  }
 }

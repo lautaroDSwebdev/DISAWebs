@@ -16,6 +16,7 @@ import "./style.css"
 import "./_components/comp.css"
 import "./_components/comp2.css"
 import "./_components/carrusel.css"
+import { ArrowUp } from "./_reusable/Arrow";
 export default function Home() {
 
   return (
@@ -27,11 +28,12 @@ export default function Home() {
       <VentajasNegocio></VentajasNegocio>
       <HagoRealidadProyectos></HagoRealidadProyectos>
       <Empecemos></Empecemos>
-      <Proyectos></Proyectos>
+      {/* <Proyectos></Proyectos> */}
       <ComoTrabajo></ComoTrabajo>
       <MisServicios></MisServicios>
       <FormComponent></FormComponent>
       <FooterComponent></FooterComponent>
+      <ArrowUp></ArrowUp>
     </div>
   );
 }

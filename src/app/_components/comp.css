@@ -1,7 +1,7 @@
 :root {
   --font-size_par: 1.7rem;
   --font-size_detail_par: 1.2rem;
-  --font-size_title: 2.9rem;
+  --font-size_title: 2.5rem;
   --font-size_par_mobile: 1.4rem;
   --font-size_title_mobile: 2.5rem;
   --color-blue: #5a5eff;
@@ -146,7 +146,6 @@ h2 {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  padding-top: 17rem;
 }
 .div_ventajas {
   display: grid;
@@ -158,7 +157,7 @@ h2 {
 }
 .section_ventajas {
   position: relative;
-  h2{
+  h2 {
     text-align: center;
     padding: 1rem;
   }
@@ -244,7 +243,13 @@ h2 {
 .section_stats_about-me {
   display: flex;
   justify-content: space-between;
-  width: 73%;
+  width: 100%;
+  max-width: 900px;
+  @media (width <900px) {
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+  }
   i {
     color: var(--color-blue);
   }
@@ -256,11 +261,14 @@ h2 {
   b {
     color: #fff;
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
   }
   div {
     display: flex;
     flex-flow: column;
     align-items: center;
+
   }
 }
 .blur-ball-comencecemos {
@@ -294,8 +302,10 @@ h2 {
   section {
     display: flex;
     justify-content: space-between;
-    h2 {
+    h3 {
       max-width: 417px;
+      color: #fff;
+      font-size: var(--font-size_title);
     }
     .redes {
       display: flex;
@@ -321,7 +331,6 @@ h2 {
     width: 90%;
     height: 43vh;
     padding: 3rem;
-    
   }
 }
 .section_comencemos {
@@ -361,19 +370,18 @@ h2 {
     }
   }
 }
-.section_carrusel{
+.section_carrusel {
   width: 197rem;
   border-radius: 3rem;
 }
-.section_div_carrusel{
+.section_div_carrusel {
   display: flex;
   gap: 3rem;
   overflow: hidden;
 }
-.div_carrusel_img{
+.div_carrusel_img {
   height: 300px;
   width: 300px;
 }
-.div_slide{
-  
+.div_slide {
 }

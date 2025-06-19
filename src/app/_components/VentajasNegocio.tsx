@@ -21,7 +21,7 @@ export const VentajasNegocio = () => {
 
     }, [])
     return (
-        <article className='article_ventajas '>
+        <article className='article_ventajas g-padding-top-sections'>
             <div className='ball-blur-purple'></div>
             <section id={data[2]} className='div_center section_ventajas g-maxwidth-page'>
                 <h2>{info?.data.ventajasSection.titulo}</h2>
@@ -38,11 +38,14 @@ export const VentajasNegocio = () => {
                         </Tilt>
                     ))}
                     {info?.data.ventajasSection.razones.map(e => (
-                            <ul className='border-box-line-blue  ul_ventajas ' key={e.id}>
+                       
+
+                            <ul className='border-box-line-blue  ul_ventajas g-card-animated-mobile' key={e.id}>
                                 <b>{e.titulo_razon}</b>
                                 <p>{e.sub_titulo}</p>
                             </ul>
                     ))}
+                   
 
                 </div>
                

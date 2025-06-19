@@ -9,8 +9,7 @@ export const ComoTrabajo = () => {
     const id_comeback = info?.data.ids_component
     return (
 
-        <article id={`${id_comeback[6]}`} className='article_how-work g-maxwidth-page'>
-            {/* blur-sombra-azul.png */}
+        <article id={`${id_comeback[6]}`} className='article_how-work g-maxwidth-page g-padding-top-sections'>
             <div className='div_how-work'>
                 <h2>¿{data.titulo}?</h2>
             </div>
@@ -32,10 +31,10 @@ export const ComoTrabajo = () => {
                         }
                     </ul>
                 </section>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            {/* <div style={{ display: "flex", justifyContent: "center" }}>
                 <Return />
 
-            </div>
+            </div> */}
         </article>
     )
 }

@@ -1,7 +1,7 @@
 :root {
   --font-size_par: 1.7rem;
   --font-size_detail_par: 1.2rem;
-  --font-size_title: 2.9rem;
+  --font-size_title: 2.5rem;
   --font-size_par_mobile: 1.4rem;
   --font-size_title_mobile: 2.5rem;
   --color-blue: #5a5eff;
@@ -78,11 +78,12 @@
 .ul_details-array {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   align-items: center;
   gap: 2rem;
   @media (width < 900px) {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); */
     gap: 2rem;
   }
   div {
