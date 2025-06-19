@@ -57,12 +57,12 @@ export const dataEs = {
         ]
     },
     
-    carruselProyectos: [
-        {id : 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza", img: "/imagen-hotel-plaza.png"},
-        {id : 2, href: "https://webdisalvo.netlify.app/", data: "Portfolio", img: "/imagen-portfolio.png"},
-        {id : 3, href: "https://caprichoso.netlify.app/home/", data: "Pagina Caprichoso", img: "/imagen-caprichoso.png"},
-        {id : 4, href: "https://masfarmaciareplica.netlify.app/", data: "Farmacia", img: "/imagen-farmacia.webp"}
-    ],
+    // carruselProyectos: [
+    //     {id : 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza", img: "/imagen-hotel-plaza.png"},
+    //     {id : 2, href: "https://webdisalvo.netlify.app/", data: "Portfolio", img: "/imagen-portfolio.png"},
+    //     {id : 3, href: "https://caprichoso.netlify.app/home/", data: "Pagina Caprichoso", img: "/imagen-caprichoso.png"},
+    //     {id : 4, href: "https://masfarmaciareplica.netlify.app/", data: "Farmacia", img: "/imagen-farmacia.webp"}
+    // ],
     destacaHeader: ["¡Destacá con una web profesional!", "Ya sea que necesítes un sitio web compléto o una atractíva landing page. Te ayúdo mejorár tu preséncia digital y  atraér más cliéntes"],
     ventajasSection: {
         titulo: "¿Por que necesíta tu negocio una pagina?",
