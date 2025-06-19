@@ -1,30 +1,50 @@
 import React, { useContext } from 'react'
-import { langCotext } from '../_context/LanguageContext';
+import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-export const Proyectos = () => {
-    const info = useContext(langCotext)
-    const [emblaRef] = useEmblaCarousel()
-    return (
-        <div id='Proyectos' className='div_component ' >
-            Seccion en proceso 
-            {/* revisar esta documentacion con generador 
-            https://www.embla-carousel.com/examples/generator/
-            */}
-            {/* <article className='article_carrusel embla' ref={emblaRef}>
+import { langCotext } from '../_context/LanguageContext'
 
-                <section className='embla__container' >
-                    {
-                        info?.data.carruselProyectos.map(e => (
-                            <div className='div_carrusel border-box-line-white embla__slide' key={e.id} >
-                                <a className='carrusel_a' target='_blank' href={e.href}  >
-                                    <img src={e.img} alt={e.data} />
-                                    <p >{e.data}</p>
-                                </a>
+
+export const Proyectos = () => {
+    const option = {
+        align: 'start',
+        dragFree: true,
+        loop: true,
+        slidesToScroll: 'auto',
+    }
+    const [emblaRef, emblaApi] = useEmblaCarousel(option, [Autoplay()])
+    const data = useContext(langCotext)
+    if (!data) return null
+    const dataProjects = data.data.carruselProyectos
+    return (
+        <section className='embla section_carrusel'>
+            <div className='embla__viewport' ref={emblaRef}>
+                <div className='embla__container section_div_carrusel'>
+                    {dataProjects.map((item) => (
+                        <div className='embla__slide div_slide' key={item.id}>
+                            <div className='embla__slide__number div_carrusel_img'>
+                                <img
+                                    src={item.img}
+                                    alt={item.data}
+                                    className=''
+                                />
+                                <div className=''>
+                                    {item.href && (
+                                        <a
+                                            href={item.href}
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            className=''
+                                            aria-label='Personal website'
+                                        >
+                                        </a>
+                                    )}
+                                </div>
                             </div>
-                        ))
-                    }
-                </section>
-            </article> */}
-        </div >
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     )
 }
+

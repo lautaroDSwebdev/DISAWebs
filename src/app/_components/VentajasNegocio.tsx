@@ -23,12 +23,11 @@ export const VentajasNegocio = () => {
     return (
         <article className='article_ventajas '>
             <div className='ball-blur-purple'></div>
-
             <section id={data[2]} className='div_center section_ventajas g-maxwidth-page'>
                 <h2>{info?.data.ventajasSection.titulo}</h2>
                 <div className='div_ventajas'>
                     {info?.data.ventajasSection.razones.map(e => (
-                        <Tilt className="background-stripes parallax-effect-glare-scale" perspective={2500}
+                        <Tilt className="background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={2500}
                             glareEnable={true}
                             glareMaxOpacity={0.45}>
 
@@ -38,8 +37,15 @@ export const VentajasNegocio = () => {
                             </ul>
                         </Tilt>
                     ))}
+                    {info?.data.ventajasSection.razones.map(e => (
+                            <ul className='border-box-line-blue  ul_ventajas ' key={e.id}>
+                                <b>{e.titulo_razon}</b>
+                                <p>{e.sub_titulo}</p>
+                            </ul>
+                    ))}
 
                 </div>
+               
             </section>
         </article>
     )

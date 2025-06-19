@@ -361,3 +361,19 @@ h2 {
     }
   }
 }
+.section_carrusel{
+  width: 197rem;
+  border-radius: 3rem;
+}
+.section_div_carrusel{
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+}
+.div_carrusel_img{
+  height: 300px;
+  width: 300px;
+}
+.div_slide{
+  
+}

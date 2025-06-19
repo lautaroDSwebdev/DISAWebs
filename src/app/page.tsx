@@ -15,6 +15,7 @@ import {
 import "./style.css"
 import "./_components/comp.css"
 import "./_components/comp2.css"
+import "./_components/carrusel.css"
 export default function Home() {
 
   return (

@@ -8,7 +8,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.g-card-animated-desk{
+  @media (width <900px) {
+    display: none;
+  }
+}
 .div_btn_regresar {
   font-size: 1.5rem;
   font-weight: bolder;

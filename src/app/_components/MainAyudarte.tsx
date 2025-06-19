@@ -30,7 +30,7 @@ export const Main = () => {
             <section className='grid_help'>
                 {
                     info?.data.grid_ayudarte.map(e => (
-                        <Tilt className="background-stripes parallax-effect-glare-scale" perspective={500}
+                        <Tilt className="background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={500}
                             glareEnable={true}
                             glareMaxOpacity={0.45}>
                             <div className='border-box-line-white size_box inner-element' key={e.id}>
@@ -43,6 +43,20 @@ export const Main = () => {
                                 </div>
                             </div>
                         </Tilt>
+                    ))
+                }
+                {
+                    info?.data.grid_ayudarte.map(e => (
+                        
+                            <div className='border-box-line-white size_box inner-element' key={e.id}>
+                                <div className='blur_boxes'></div>
+
+                                <p className='g-subtitle-texts'>{e.data}</p>
+
+                                <div className='div_img'>
+                                    <img src={e.img} alt="imagen" />
+                                </div>
+                            </div>
                     ))
                 }
             </section>
