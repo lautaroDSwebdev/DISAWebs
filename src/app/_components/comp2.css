@@ -95,9 +95,8 @@
     flex-flow: column;
     align-items: center;
     padding: 2rem;
-    @media (width < 900px) {
+    @media (width > 900px) {
       padding: 5rem;
-      
     }
     img {
       height: 5rem;
