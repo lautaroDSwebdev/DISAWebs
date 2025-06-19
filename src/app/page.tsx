@@ -9,7 +9,7 @@ import {
   Main,
   MisServicios,
   Nav,
-  Proyectos,
+  // Proyectos,
   VentajasNegocio,
 } from "./_components";
 import "./style.css"

@@ -7,6 +7,6 @@ export * from './Header';
 export * from './MainAyudarte';
 export * from './MisServicios';
 export * from './Nav';
-export * from './Proyectos';
+// export * from './Proyectos';
 export * from './Return';
 export * from './VentajasNegocio';
