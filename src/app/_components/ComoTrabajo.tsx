@@ -15,7 +15,7 @@ export const ComoTrabajo = () => {
             </div>
 
                 <section className='border-box-line-blue-how-work section_details'>
-                    <div className='blur-blue-how-work'></div>
+                    <section className='blur-blue-how-work'></section>
 
                     <div className='section-div_details'>
                         <p className='g-subtitle-texts'>{data.box_titulo}</p>
@@ -31,10 +31,7 @@ export const ComoTrabajo = () => {
                         }
                     </ul>
                 </section>
-            {/* <div style={{ display: "flex", justifyContent: "center" }}>
-                <Return />
-
-            </div> */}
+           
         </article>
     )
 }

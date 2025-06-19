@@ -10,7 +10,7 @@ export const MisServicios = () => {
   const empecemos_redirigir = info.data.ids_component,
     id_services = info.data.ids_component
   return (
-    <div id={`${id_services[7]}`} className='g-maxwidth-page '>
+    <div id={`${id_services[7]}`} className='g-maxwidth-page g-padding-top-sections'>
       <section className='section_title_info_servicios'>
         <h2>{servicios.titulo}</h2>
         <p className='g-subtitle-texts'>{servicios.sub_titulo}</p>

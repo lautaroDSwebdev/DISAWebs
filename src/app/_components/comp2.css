@@ -73,17 +73,21 @@
       text-align: center;
       padding: 5rem;
     }
+    height: 20vh;
   }
+}
+.section-div_details, .ul_details-array{
+  padding: .5rem;
 }
 .ul_details-array {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2rem;
   @media (width < 900px) {
-    /* grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
   div {
@@ -91,6 +95,10 @@
     flex-flow: column;
     align-items: center;
     padding: 2rem;
+    @media (width < 900px) {
+      padding: 5rem;
+      
+    }
     img {
       height: 5rem;
       width: 5rem;
@@ -102,9 +110,6 @@
 }
 .section_title_info_servicios > * {
   padding: 2rem;
-  /* @media (width < 900px) {
-    
-  } */
 }
 .grid_services {
   display: grid;

@@ -126,6 +126,11 @@
       width: 515px;
       height: auto;
       padding-top: 2rem;
+      @media (width< 900px) {
+        width: 415px;
+
+      }
+
     }
   }
 }
@@ -327,10 +332,10 @@ h2 {
   @media (width < 900px) {
     background-image: url('/empecemos-img-mobile.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 90%;
-    height: 43vh;
-    padding: 3rem;
+    background-size: cover;
+    background-position: center;
+    /* width: 90%; */
+    height: 65vh;
   }
 }
 .section_comencemos {
