@@ -158,7 +158,7 @@ h2 {
   gap: 3rem;
   z-index: 800;
   padding: 1.5rem;
-  width: 100%;
+  /* width: 100%; */
 }
 .section_ventajas {
   position: relative;
@@ -305,6 +305,8 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 999;
+  box-sizing: border-box;
+  border-radius: var(--radius);
   section {
     display: flex;
     justify-content: space-between;
@@ -335,7 +337,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* width: 90%; */
+    width: 100%;
     height: 65vh;
   }
 }
