@@ -135,6 +135,7 @@ a {
   position: fixed;
   top: 46rem;
   right: 0px;
+  z-index: 999;
   svg{
     border-radius: 100%;
     width: 5rem;
