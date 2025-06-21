@@ -5,13 +5,17 @@ import { useGSAP } from '@gsap/react'
 import { gsap } from "gsap";
 import { SplitText } from 'gsap/all';
 export const Nav = () => {
+
+    // const preference = window.matchMedia("(preference-color-scheme: dark)").matches
+    // const [isDark, setIsDark] = useLocalStorage("isDark", preference)
+
     const data = useContext(langCotext)
     if (!data) return null
     const id_comback = data.data.ids_component
     gsap.registerPlugin(useGSAP, SplitText);
 
     useEffect(() => {
-        let texto_div = SplitText.create("section_nav a", {
+        let texto_div = SplitText.create(".section_nav .nav_a", {
             type: "chars,words "
         });
         gsap.from(texto_div.chars, {
@@ -23,10 +27,10 @@ export const Nav = () => {
                 from: "end"
             } // 0.05 seconds between each
         });
-       
+
     }, [])
     return (
-        <section className={`section_nav g-lightblue-bg `}>
+        <section className={`section_nav g-lightblue-bg `} >
             <nav className='g-maxwidth-page '>
                 <div>
                     <a href={`#${id_comback[0]}`}>
@@ -42,7 +46,7 @@ export const Nav = () => {
                         <a className='nav_a' key={e.id} href={e.href}>{e.data}</a>
                     ))
                 }
-
+                {/* <Toggle handleChange={() => setIsDark(!isDark)} isChecked={isDark}></Toggle> */}
             </nav>
         </section>
     )

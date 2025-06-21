@@ -24,8 +24,6 @@ export const Empecemos = () => {
                                     <a className='g-element-scale-transition' key={e.id} href={e.href} target='_blank' >{e.data}
 
                                         {e.data === "mi whatsapp" ? <FaSquareWhatsapp /> : <FaSquareInstagram />}
-
-
                                     </a>
                                 ))
                             }
