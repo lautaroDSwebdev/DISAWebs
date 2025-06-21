@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
-import { Return } from './Return'
 import Tilt from 'react-parallax-tilt';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -218,10 +217,7 @@ export const MisServicios = () => {
         </div>
 
       </section >
-      {/* <div style={{ display: "flex", justifyContent: "center" }}>
-        <Return />
-
-      </div> */}
+     
     </div >
 
   )

@@ -1,7 +1,5 @@
 import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
-import { Return } from './Return'
-import Tilt from 'react-parallax-tilt';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {gsap} from 'gsap';

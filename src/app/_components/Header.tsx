@@ -1,5 +1,5 @@
 "use client"
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
