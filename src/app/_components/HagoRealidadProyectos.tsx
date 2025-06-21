@@ -1,12 +1,52 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
-import { Return } from './Return'
+import { useGSAP } from '@gsap/react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SplitText } from 'gsap/SplitText';
 
 export const HagoRealidadProyectos = () => {
-
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+  gsap.registerPlugin(useGSAP, SplitText);
   const info = useContext(langCotext)
   if (!info) return null
   const id_comeback = info?.data.ids_component
+  useEffect(() => {
+    let texto_div = SplitText.create(".section_img_reality-projects", {
+      type: "chars,words "
+  });
+  gsap.from(texto_div.chars, {
+      y: 50,       // animate from 100px below
+      duration: 1,
+      autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
+      stagger: {
+          amount: .8,
+          from: "end"
+      } // 0.05 seconds between each
+  });
+    gsap.from(".div_making-reality-projects ", {
+        scrollTrigger: {
+            trigger: ".div_making-reality-projects ",
+            // start: 50
+            toggleActions: "restart"
+        },
+        opacity: 0,
+        x: -50,
+        duration: 2,
+    })
+    gsap.to(".div_making-reality-projects ", {
+        scrollTrigger: {
+            trigger: ".div_making-reality-projects ",
+            // start: 50
+            toggleActions: "play"
+        },
+        opacity: 1,
+        x: 0,
+        duration: 2,
+    })
+
+}, [])
+
   return (
     <div className='g-padding-top-sections'>
 
@@ -36,7 +76,6 @@ export const HagoRealidadProyectos = () => {
             <b className='section_b'>{info?.data.makingRealityYourProject.text_icons[2]}</b>
           </div>
         </section>
-        {/* <Return/> */}
       </div>
     </div>
   )

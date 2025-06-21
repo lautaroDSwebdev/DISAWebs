@@ -1,12 +1,42 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {gsap} from 'gsap';
 
 export const FormComponent = () => {
-
+    gsap.registerPlugin(useGSAP, ScrollTrigger);
     const info = useContext(langCotext)
     if (!info) return null
     const form_info = info.data.form,
         id_contact = info.data.ids_component
+        useEffect(()=> {
+
+
+            gsap.from(".div_form   ", {
+                scrollTrigger: {
+                    trigger: ".div_form   ",
+                    // start: 50
+                    toggleActions: "restart"
+                },
+                opacity: 0,
+                x: 50,
+                duration: 2,
+            })
+            gsap.to(".div_form   ", {
+                scrollTrigger: {
+                    trigger: ".div_form   ",
+                    // start: 50
+                    toggleActions: "play"
+                },
+                opacity: 1,
+                x: 0,
+                duration: 2,
+            })
+    
+    
+    
+        },[])
     return (
         <div className='g-padding-top-sections'>
 

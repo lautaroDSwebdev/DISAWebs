@@ -1,12 +1,43 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
 import { FaSquareInstagram, FaSquareWhatsapp } from 'react-icons/fa6'
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {gsap} from 'gsap';
 
 export const Empecemos = () => {
+    gsap.registerPlugin(useGSAP, ScrollTrigger);
     const info = useContext(langCotext)
     if (!info) return null
     const empecemos = info.data.comencemos
     const empecemos_id = info.data.ids_component
+    useEffect(()=> {
+
+
+        gsap.from(".section_comencemos  ", {
+            scrollTrigger: {
+                trigger: ".section_comencemos  ",
+                // start: 50
+                toggleActions: "restart"
+            },
+            opacity: 0,
+            y: -50,
+            duration: 2,
+        })
+        gsap.to(".section_comencemos  ", {
+            scrollTrigger: {
+                trigger: ".section_comencemos  ",
+                // start: 50
+                toggleActions: "play"
+            },
+            opacity: 1,
+            y: 0,
+            duration: 2,
+        })
+
+
+
+    },[])
     return (
         <div className='g-padding-top-sections'>
 
