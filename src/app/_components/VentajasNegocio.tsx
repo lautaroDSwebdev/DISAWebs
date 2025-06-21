@@ -39,10 +39,10 @@ export const VentajasNegocio = () => {
                 <h2>{info?.data.ventajasSection.titulo}</h2>
                 <div className='div_ventajas'>
                     {info?.data.ventajasSection.razones.map(e => (
-                        <Tilt className="background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={2500}
+                        <Tilt key={e.id} className="background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={2500}
                             glareEnable={true}
                             glareMaxOpacity={0.45}>
-                            <ul className='border-box-line-blue  ul_ventajas ' key={e.id}>
+                            <ul className='border-box-line-blue  ul_ventajas ' >
                                 <b>{e.titulo_razon}</b>
                                 <p>{e.sub_titulo}</p>
                             </ul>

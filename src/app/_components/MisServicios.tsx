@@ -18,11 +18,11 @@ export const MisServicios = () => {
   const empecemos_redirigir = info.data.ids_component,
     id_services = info.data.ids_component
 
+    
+    useEffect(() => {
     let texto_div = SplitText.create(".texto_animado", {
       type: "chars,words"
     });
-
-  useEffect(() => {
     gsap.from(texto_div.chars, {
       y: 50,       // animate from 100px below
       duration: 1,
