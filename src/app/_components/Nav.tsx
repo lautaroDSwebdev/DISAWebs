@@ -5,10 +5,6 @@ import { useGSAP } from '@gsap/react'
 import { gsap } from "gsap";
 import { SplitText } from 'gsap/all';
 export const Nav = () => {
-
-    // const preference = window.matchMedia("(preference-color-scheme: dark)").matches
-    // const [isDark, setIsDark] = useLocalStorage("isDark", preference)
-
     const data = useContext(langCotext)
     if (!data) return null
     const id_comback = data.data.ids_component
