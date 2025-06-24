@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {gsap} from 'gsap';
+import { gsap } from 'gsap';
 export const Proyectos = () => {
     gsap.registerPlugin(useGSAP, ScrollTrigger);
     const settings = {
@@ -17,7 +17,7 @@ export const Proyectos = () => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
- useEffect(() => {
+    useEffect(() => {
         gsap.from(".section_container_carrusel ", {
             scrollTrigger: {
                 trigger: ".section_container_carrusel ",
@@ -42,34 +42,39 @@ export const Proyectos = () => {
     }, [])
     const data = useContext(langCotext)
     if (!data) return null
+    const id_component = data.data.ids_component
     const dataProjects = data.data.carruselProyectos,
-         listaProyectos = dataProjects.listaProyectos,
-         titulo = dataProjects.titulo
+        listaProyectos = dataProjects.listaProyectos,
+        titulo = dataProjects.titulo
     return (
 
-        <section className='section_container_carrusel g-padding-top-sections g-maxwidth-page'>
+        <section id={`${id_component[5]}`} className='section_container_carrusel g-padding-top-sections g-maxwidth-page'>
             <h2>{titulo}</h2>
-            <Slider {...settings} className='div_slider-proyectos'>
-                {listaProyectos.map((e) => (
-                    <section key={e.id} className='section_carrusel'>
-                        <a href={e.href} target='_blank' className='div_carrusel_img'>
-                            <img
-                                src={e.img}
-                                alt={e.data}
-                                className=''
-                            />
-                        </a>
-                        <div className='div_button_proyectos'>
+            <div className='div_relative_blur'>
+            <div className='g-blur-blue-projects'></div>
 
-                            <a className='button_carrusel'
-                                target='_blank'
-                                href={e.href}>
-                                {e.data}
+                <Slider {...settings} className='div_slider-proyectos'>
+                    {listaProyectos.map((e) => (
+                        <section key={e.id} className='section_carrusel'>
+                            <a href={e.href} target='_blank' className='div_carrusel_img'>
+                                <img
+                                    src={e.img}
+                                    alt={e.data}
+                                    className=''
+                                />
                             </a>
-                        </div>
-                    </section>
-                ))}
-            </Slider>
+                            <div className='div_button_proyectos'>
+
+                                <a className='button_carrusel'
+                                    target='_blank'
+                                    href={e.href}>
+                                    {e.data}
+                                </a>
+                            </div>
+                        </section>
+                    ))}
+                </Slider>
+            </div>
         </section>
     )
 }

@@ -354,7 +354,7 @@ h2 {
   }
 }
 .section_comencemos {
-  position: relative;
+ 
   padding: 2rem;
   /* z-index: 999; */
 }
@@ -374,9 +374,9 @@ h2 {
   flex-direction: row;
 }
 .div_slider-proyectos{
-  padding: 1rem;
   outline: solid 1px;
   outline-color:var(--color-blue) ;
+  position: relative;
 }
 .article_carrusel {
   display: flex;
@@ -392,11 +392,17 @@ h2 {
 }
 .section_container_carrusel{
   padding: 2rem;
+  
+}
+.div_relative_blur{
+  position: relative;
+  overflow: hidden;
+  border: var(--radius);
 }
 .section_carrusel {
   border-radius: var(--radius);
   background: #02081d;
-  height: 42vh;
+  height: 39rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,7 +410,7 @@ h2 {
 .section_div_carrusel {
   display: flex;
   gap: 3rem;
-  overflow: hidden;
+  
 }
 .button_carrusel{
   background: #5a5eff;
@@ -427,6 +433,7 @@ h2 {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  z-index: 999;
   img{
     height: auto;
     width: 900px;
@@ -435,5 +442,25 @@ h2 {
       width: 423px;
     }
     border: var(--radius);
+  }
+}
+.g-blur-blue-projects {
+  z-index: 300;
+  background-image: url('/blur_projects.png');
+  background-position: -12rem -6rem;
+  background-repeat: no-repeat;
+  background-size: 33rem;
+  width: 49%;
+  height: 55%;
+  position: absolute;
+  bottom: -148px;
+  @media (width <900px) {
+    background-position: -12rem -4rem;
+    background-repeat: no-repeat;
+    background-size: 33rem;
+    width: 110%;
+    height: 54%;
+    position: absolute;
+    bottom: -148px;
   }
 }
