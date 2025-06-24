@@ -42,7 +42,6 @@ export const Nav = () => {
                         <a className='nav_a' key={e.id} href={e.href}>{e.data}</a>
                     ))
                 }
-                {/* <Toggle handleChange={() => setIsDark(!isDark)} isChecked={isDark}></Toggle> */}
             </nav>
         </section>
     )

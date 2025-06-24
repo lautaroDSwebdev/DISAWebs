@@ -9,6 +9,7 @@ import {
   Main,
   MisServicios,
   Nav,
+  NavMobile,
   Proyectos,
   VentajasNegocio,
 } from "./_components";
@@ -23,6 +24,7 @@ export default function Home() {
     <div className=" ">
      
       <Nav></Nav>
+      <NavMobile></NavMobile>
       <Header></Header>
       <Main></Main>
       <VentajasNegocio></VentajasNegocio>

@@ -86,6 +86,10 @@
   border-radius: var(--radius);
   color: #fff;
   background-color: var(--color-blue);
+  @media (width <900px) {
+    width: 100%;
+    font-size: 2rem;
+  }
 }
 .text-blue {
   color: var(--color-blue);
@@ -114,6 +118,7 @@
 .header_section {
   margin: auto;
   display: flex;
+  padding-top: 3rem;
   @media (width< 900px) {
     flex-flow: column-reverse;
     align-items: center;
