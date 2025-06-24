@@ -9,7 +9,7 @@ import {
   Main,
   MisServicios,
   Nav,
-  // Proyectos,
+  Proyectos,
   VentajasNegocio,
 } from "./_components";
 import "./style.css"
@@ -28,7 +28,7 @@ export default function Home() {
       <VentajasNegocio></VentajasNegocio>
       <HagoRealidadProyectos></HagoRealidadProyectos>
       <Empecemos></Empecemos>
-      {/* <Proyectos></Proyectos> */}
+      <Proyectos></Proyectos>
       <ComoTrabajo></ComoTrabajo>
       <MisServicios></MisServicios>
       <FormComponent></FormComponent>

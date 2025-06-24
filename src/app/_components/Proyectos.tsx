@@ -1,50 +1,76 @@
-// import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 // import Autoplay from 'embla-carousel-autoplay'
 // import useEmblaCarousel from 'embla-carousel-react'
-// import { langCotext } from '../_context/LanguageContext'
+import { langCotext } from '../_context/LanguageContext'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {gsap} from 'gsap';
+export const Proyectos = () => {
+    gsap.registerPlugin(useGSAP, ScrollTrigger);
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+ useEffect(() => {
+        gsap.from(".section_container_carrusel ", {
+            scrollTrigger: {
+                trigger: ".section_container_carrusel ",
+                // start: 50
+                toggleActions: "restart"
+            },
+            opacity: 0,
+            y: -50,
+            duration: 3,
+        })
+        gsap.to(".section_container_carrusel ", {
+            scrollTrigger: {
+                trigger: ".section_container_carrusel ",
+                // start: 50
+                toggleActions: "play"
+            },
+            opacity: 1,
+            y: 0,
+            duration: 3,
+        })
 
+    }, [])
+    const data = useContext(langCotext)
+    if (!data) return null
+    const dataProjects = data.data.carruselProyectos,
+         listaProyectos = dataProjects.listaProyectos,
+         titulo = dataProjects.titulo
+    return (
 
-// export const Proyectos = () => {
-//     const option = {
-//         align: 'start',
-//         dragFree: true,
-//         loop: true,
-//         slidesToScroll: 'auto',
-//     }
-//     const [emblaRef, emblaApi] = useEmblaCarousel(option, [Autoplay()])
-//     const data = useContext(langCotext)
-//     if (!data) return null
-//     const dataProjects = data.data.carruselProyectos
-//     return (
-//         <section className='embla section_carrusel'>
-//             <div className='embla__viewport' ref={emblaRef}>
-//                 <div className='embla__container section_div_carrusel'>
-//                     {dataProjects.map((item) => (
-//                         <div className='embla__slide div_slide' key={item.id}>
-//                             <div className='embla__slide__number div_carrusel_img'>
-//                                 <img
-//                                     src={item.img}
-//                                     alt={item.data}
-//                                     className=''
-//                                 />
-//                                 <div className=''>
-//                                     {item.href && (
-//                                         <a
-//                                             href={item.href}
-//                                             target='_blank'
-//                                             rel='noopener noreferrer'
-//                                             className=''
-//                                             aria-label='Personal website'
-//                                         >
-//                                         </a>
-//                                     )}
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
+        <section className='section_container_carrusel g-padding-top-sections g-maxwidth-page'>
+            <h2>{titulo}</h2>
+            <Slider {...settings} className='div_slider-proyectos'>
+                {listaProyectos.map((e) => (
+                    <section key={e.id} className='section_carrusel'>
+                        <a href={e.href} target='_blank' className='div_carrusel_img'>
+                            <img
+                                src={e.img}
+                                alt={e.data}
+                                className=''
+                            />
+                        </a>
+                        <div className='div_button_proyectos'>
+
+                            <a className='button_carrusel'
+                                target='_blank'
+                                href={e.href}>
+                                {e.data}
+                            </a>
+                        </div>
+                    </section>
+                ))}
+            </Slider>
+        </section>
+    )
+}
 

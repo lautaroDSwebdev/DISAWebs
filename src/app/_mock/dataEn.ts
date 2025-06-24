@@ -32,12 +32,16 @@ export const dataEn = {
             {id: 2, data: "my instagram", href: "https://www.instagram.com/lautarodisalvo_frontdev?igsh=MXJkc3hjdDJ2amFseg=="}
         ]
     },
-    // carruselProyectos: [
-    //     {id : 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza", img: "/imagen-hotel-plaza.png"},
-    //     {id : 2, href: "https://webdisalvo.netlify.app/", data: "Portfolio", img: "/imagen-portfolio.png"},
-    //     {id : 3, href: "https://caprichoso.netlify.app/home/", data: "Pagina Caprichoso", img: "/imagen-caprichoso.png"},
-    //     {id : 4, href: "https://masfarmaciareplica.netlify.app/", data: "Farmacia", img: "/imagen-farmacia.webp"}
-    // ],
+    carruselProyectos: {
+        titulo: "Projects",
+        listaProyectos: [
+            {id : 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza Web", img: "/imagen-hotel-plaza.png"},
+            {id : 2, href: "https://webdisalvo.netlify.app/", data: "My personal portfolio", img: "/imagen-portfolio.png"},
+            {id : 3, href: "https://caprichoso.netlify.app/home/", data: "Caprichoso Web", img: "/imagen-caprichoso.png"},
+            {id : 4, href: "https://masfarmaciareplica.netlify.app/", data: "pharmacy Web", img: "/imagen-farmacia.webp"}
+        ],
+
+    },
     regresar: "Return 🔼",
     misServicios: {
         titulo: "My Services",
