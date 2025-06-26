@@ -96,6 +96,10 @@
 }
 /* clases animadas con gsap */
 .texto_div {
+  @media (width > 900px) {
+    width: 500px;
+  }
+  
 }
 .texto_animado {
 }
@@ -119,6 +123,8 @@
   margin: auto;
   display: flex;
   padding-top: 3rem;
+  justify-content: center;
+  gap: 10rem;
   @media (width< 900px) {
     flex-flow: column-reverse;
     align-items: center;
@@ -131,13 +137,12 @@
     p {
       color: #ffffff;
       @media (width< 900px) {
+        padding: 1rem;
         text-align: center;
       }
     }
     p {
       font-size: var(--font-size_par);
-      /* max-width: 516px; */
-      padding: 1rem;
     }
     img {
       width: 515px;
