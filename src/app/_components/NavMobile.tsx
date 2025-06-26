@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { langCotext } from '../_context/LanguageContext'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { CgClose } from "react-icons/cg";
 export const NavMobile = () => {
     const data = useContext(langCotext)
     if (!data) return null
@@ -14,7 +15,7 @@ export const NavMobile = () => {
 
     return (
         <section className='nav_mobile'>
-            <div className='options_top g-blur-bg-color-blue'>
+            <div className='options_top g-bgwhite-opacity'>
                 <a href={`#${id_comback[0]}`}>
 
                     <img src="logo-pagina-png.png" alt="" />
@@ -35,6 +36,10 @@ export const NavMobile = () => {
                         <a onClick={() => setState(!state)} key={e.id} href={e.href}>{e.data}</a>
                     ))}
                 </nav>
+                <div className='div_svg_close'>
+
+                    <CgClose onClick={() => setState(!state)} />
+                </div>
             </div>
 
 

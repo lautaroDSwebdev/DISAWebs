@@ -8,6 +8,7 @@
   --secondary-text-color: #ffffff;
   --toggle-bg: #feb9d;
   --toggle-fg: #ffde00;
+  --radius:1rem ;
 }
 
 [data-theme='light'] {
@@ -100,6 +101,11 @@ p {
 }
 .g-blur-bg {
   backdrop-filter: blur(2rem);
+  background-color: #ffffff25;
+}
+.g-bgwhite-opacity{
+  background-color: #ffffff25;
+  backdrop-filter: blur(2rem);
 }
 .g-color-text {
   color: #5a5eff;
@@ -146,9 +152,11 @@ p {
 }
 .nav_mobile {
   position: fixed;
-  bottom: 0;
-  width: 100%;
   height: 5rem;
+  left: 2rem;
+  right: 2rem;
+  position: fixed;
+  bottom: 25px;
   z-index: 999;
   button {
     cursor: pointer;
@@ -159,6 +167,7 @@ p {
     flex-flow: row;
     height: 5rem;
     align-items: center;
+    border-radius: var(--radius);
     img {
       height: auto;
       width: 50px;
@@ -199,12 +208,20 @@ p {
 .mobile_options_open {
   transform: translateX(0);
   position: fixed;
-  top: 0;
-  bottom: 5rem;
-  left: 0;
-  right: 0;
+ inset: 0;
   transition: all 0.3s ease-out;
   z-index: 999;
+  
+  
+}
+.div_svg_close{
+  display: flex;
+  justify-content: center;
+  svg{
+  color: #fff;
+  font-weight: 900;
+  font-size: 3rem;
+  }
 }
 a {
   color: #fff;
