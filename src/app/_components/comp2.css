@@ -356,7 +356,7 @@ form {
     display: flex;
     flex-flow: column;
     gap: 1rem;
-    z-index: 999;
+    z-index: 0;
     @media (width <900px) {
       flex-flow: row;
     }
@@ -366,6 +366,7 @@ form {
       gap: 5px;
       z-index: 999;
       cursor: pointer;
+      z-index: 300;
       img{
         height: auto;
         width: 46px;
