@@ -261,6 +261,7 @@ h2 {
 .section_img_reality-projects {
   img {
     width: 100%;
+    height: auto;
   }
 }
 .section_stats_about-me {

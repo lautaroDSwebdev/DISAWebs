@@ -241,7 +241,7 @@ a {
   position: fixed;
   top: 46rem;
   right: 0px;
-  z-index: 600;
+  z-index: 800;
   svg {
     border-radius: 100%;
     width: 5rem;

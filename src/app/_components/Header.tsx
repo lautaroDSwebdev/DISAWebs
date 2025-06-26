@@ -71,7 +71,7 @@ export const Header = () => {
     if (!info) return null
     const data = info.data.ids_component
     return (
-        <article>
+        <header>
             {/* <div className='blur-blue-left-header '></div> */}
             <div className='ball-blur-purple-right-header '></div>
 
@@ -84,6 +84,6 @@ export const Header = () => {
                     <img className='image' src="/logo-pagina-png.png" alt="imagen" />
                 </div>
             </section>
-        </article>
+        </header>
     )
 }

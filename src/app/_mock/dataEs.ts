@@ -1,5 +1,5 @@
 export const dataEs = {
-    ids_component: ["Inicio", "Ayudarte", "¿Por-que-una-web?", "Sobre-Mi", "Empecemos", "Proyectos", "Como-Trabajo","Mis-Servicios", "Contacto"],
+    ids_component: ["Inicio", "Ayudarte", "¿Por-que-una-web?", "Sobre-Mi", "Empecemos", "Proyectos", "Como-Trabajo", "Mis-Servicios", "Contacto"],
     nav_data: [
         { id: 1, href: "#Ayudarte", data: "Ayudarte" },
         { id: 2, href: "#¿Por-que-una-web?", data: "¿Por que una web?" },
@@ -20,7 +20,7 @@ export const dataEs = {
         titulo: "Empecemos a hoy a trabajar juntos",
         array_redes: [
             { id: 1, data: "mi whatsapp", href: "https://api.whatsapp.com/send?phone=5492494379804" },
-            { id: 2, data: "mi instagram", href: "https://www.instagram.com/lautarodisalvo_frontdev?igsh=MXJkc3hjdDJ2amFseg==" }
+            { id: 2, data: "mi instagram", href: "https://www.instagram.com/lautarodisalvo_frontdev" }
         ]
     },
     misServicios: {
@@ -56,13 +56,24 @@ export const dataEs = {
             { id: 6, titulo: "Integración con mapas y calendários (opcional)" },
         ]
     },
+    fotterInfo: {
+        title: "Hablémos de tu proyécto",
+        hours: "Lunes a Viernes - 8:00 am a 18:00pm (ARG)",
+        copyright: "Copyright © DISAWebs todos los derechos reservados",
+        contact: [
+            { id: 453, text: "+54 2494379804", url: "https://api.whatsapp.com/send?phone=5492494379804", icon: "ri_whatsapp-fill.svg" },
+            { id: 454 ,text: "Lautaro Di Salvo", url: "https://www.linkedin.com/in/ldsfrontend/", icon: "uil_linkedin.svg" },
+            { id: 353, text: "lautarodisalvo_frontdev", url: "https://www.instagram.com/lautarodisalvo_frontdev", icon: "mdi_instagram.svg" }
+        ]
+    },
+    // 
     carruselProyectos: {
         titulo: "Proyectos",
         listaProyectos: [
-            {id : 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza Web", img: "/imagen-hotel-plaza.png"},
-            {id : 2, href: "https://webdisalvo.netlify.app/", data: "Mi portfolio personal", img: "/imagen-portfolio.png"},
-            {id : 3, href: "https://caprichoso.netlify.app/home/", data: "Caprichoso Web", img: "/imagen-caprichoso.png"},
-            {id : 4, href: "https://masfarmaciareplica.netlify.app/", data: "Farmacia Web", img: "/imagen-farmacia.webp"}
+            { id: 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza Web", img: "/imagen-hotel-plaza.png" },
+            { id: 2, href: "https://webdisalvo.netlify.app/", data: "Mi portfolio personal", img: "/imagen-portfolio.png" },
+            { id: 3, href: "https://caprichoso.netlify.app/home/", data: "Caprichoso Web", img: "/imagen-caprichoso.png" },
+            { id: 4, href: "https://masfarmaciareplica.netlify.app/", data: "Farmacia Web", img: "/imagen-farmacia.webp" }
         ],
 
     },
