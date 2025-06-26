@@ -33,6 +33,9 @@ html {
 .g-padding-top-sections {
   padding-top: 17rem;
 }
+.g-boxshadow-blue{
+  box-shadow:0 4px 14px 1px #5a5eff;
+}
 .g-card-animated-desk {
   @media (width <900px) {
     display: none;
