@@ -26,7 +26,7 @@ export const Nav = () => {
 
     }, [])
     return (
-        <section className={`section_nav g-lightblue-bg `} >
+        <section className={`section_nav g-blur-bg `} >
             <nav className='g-maxwidth-page '>
                 <div>
                     <a href={`#${id_comback[0]}`}>

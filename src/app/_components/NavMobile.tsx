@@ -14,14 +14,17 @@ export const NavMobile = () => {
 
     return (
         <section className='nav_mobile'>
-            <div className='options_top'>
-                <img src="logo-pagina-png.png" alt="" />
+            <div className='options_top g-blur-bg-color-blue'>
+                <a href={`#${id_comback[0]}`}>
+
+                    <img src="logo-pagina-png.png" alt="" />
+                </a>
                 <button onClick={() => setState(!state)}>
                     <GiHamburgerMenu />
                 </button>
             </div>
 
-            <div className={`div_select ${state ? "mobile_options_open" : "mobile_options"}`}>
+            <div className={`div_select g-blur-bg ${state ? "mobile_options_open" : "mobile_options"}`}>
                 <select className='btn_lang' onChange={data?.HandleLanguage}>
                     <option value="es">ES</option>
                     <option value="en">EN</option>

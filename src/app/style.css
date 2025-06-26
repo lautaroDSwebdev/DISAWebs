@@ -93,15 +93,20 @@ p {
 .g-border-boxes {
   border: #fff solid 2px;
 }
-.g-lightblue-bg {
-  background: #5a5eff;
+.g-blur-bg-color-blue {
+  backdrop-filter: blur(2rem);
+  border-right: solid 2px;
+  border-color: var(--foreground-color);
+}
+.g-blur-bg {
+  backdrop-filter: blur(2rem);
 }
 .g-color-text {
   color: #5a5eff;
 }
 .g-maxwidth-page {
   max-width: 1400px;
-  @media (width < 780px) {
+  @media (width < 900px) {
     max-width: 1000px;
   }
   margin: auto;
@@ -112,6 +117,7 @@ p {
   position: fixed;
   width: 13rem;
   z-index: 999;
+  background-color: #ffffff28;
   @media (width < 900px) {
     display: none;
   }
@@ -139,13 +145,12 @@ p {
   }
 }
 .nav_mobile {
-  background: var(--foreground-color);
   position: fixed;
-  bottom:  0;
+  bottom: 0;
   width: 100%;
   height: 5rem;
   z-index: 999;
-  button{
+  button {
     cursor: pointer;
   }
   .options_top {
@@ -163,7 +168,7 @@ p {
     display: none;
   }
 }
-.div_select{
+.div_select {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -182,7 +187,6 @@ p {
   }
 }
 .mobile_options {
-  background: #040e32;
   transform: translateX(-39rem);
   position: fixed;
   top: 0;
@@ -190,17 +194,16 @@ p {
   left: 0;
   right: 0;
   z-index: 999;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .mobile_options_open {
-  background: #040e32;
   transform: translateX(0);
   position: fixed;
   top: 0;
   bottom: 5rem;
   left: 0;
   right: 0;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   z-index: 999;
 }
 a {
@@ -221,7 +224,7 @@ a {
   position: fixed;
   top: 46rem;
   right: 0px;
-  z-index: 999;
+  z-index: 600;
   svg {
     border-radius: 100%;
     width: 5rem;

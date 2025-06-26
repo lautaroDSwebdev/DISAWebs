@@ -46,7 +46,6 @@ export const MisServicios = () => {
       opacity: 0,
       x: -50,
       duration: 2,
-      delay: 1
     })
     gsap.to(".appear_services", {
       scrollTrigger: {
@@ -56,7 +55,6 @@ export const MisServicios = () => {
       opacity: 1,
       x: 0,
       duration: 2,
-      delay: 1
     })
 
 

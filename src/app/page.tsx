@@ -22,7 +22,6 @@ export default function Home() {
 
   return (
     <div className=" ">
-     
       <Nav></Nav>
       <NavMobile></NavMobile>
       <Header></Header>
