@@ -342,6 +342,10 @@ form {
   overflow: hidden;
   position: relative;
   background-color: #02081d;
+  @media (width <900px) {
+    height: 50vh;
+
+  }
 }
 .section_footer{
   display: flex;
