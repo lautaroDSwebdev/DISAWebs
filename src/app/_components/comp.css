@@ -229,17 +229,17 @@ h2 {
 .ball-blur-purple-right-header {
   z-index: 0;
   background-image: url('/ball-blur-purple-right-header.svg');
-  background-position: right;
+  background-position: right -11rem;
   background-repeat: no-repeat;
-  background-size: 63rem;
-  width: 99%;
-  height: 57%;
+  background-size: 41rem;
+  width: 94%;
+  height: 55%;
   position: absolute;
-  top: 0;
+  top: 5px;
   @media (width < 900px) {
-    background-position: -5%;
+    background-position: 3rem -10rem;
     background-repeat: no-repeat;
-    background-size: 61rem;
+    background-size: 42rem;
     width: 99%;
     height: 66%;
     position: absolute;

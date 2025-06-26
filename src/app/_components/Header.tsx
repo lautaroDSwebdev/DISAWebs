@@ -72,7 +72,6 @@ export const Header = () => {
     const data = info.data.ids_component
     return (
         <header>
-            {/* <div className='blur-blue-left-header '></div> */}
             <div className='ball-blur-purple-right-header '></div>
 
             <section id={data[0]} className='header_section g-maxwidth-page '>
