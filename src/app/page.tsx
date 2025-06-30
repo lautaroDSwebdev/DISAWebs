@@ -18,6 +18,7 @@ import "./_components/comp.css"
 import "./_components/comp2.css"
 import "./_components/carrusel.css"
 import { ArrowUp } from "./_reusable/Arrow";
+import { ToastContainer } from 'react-toastify';
 export default function Home() {
 
   return (
@@ -35,6 +36,19 @@ export default function Home() {
       <FormComponent></FormComponent>
       <FooterComponent></FooterComponent>
       <ArrowUp></ArrowUp>
+      <ToastContainer 
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          // transition={Bounce} 
+          />
     </div>
   );
 }

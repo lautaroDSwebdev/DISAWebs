@@ -8,20 +8,29 @@ import Slider from "react-slick";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+import { FiArrowUpRight } from "react-icons/fi";
 export const Proyectos = () => {
     gsap.registerPlugin(useGSAP, ScrollTrigger);
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+            }
+        ]
     };
     useEffect(() => {
         gsap.from(".section_container_carrusel ", {
             scrollTrigger: {
                 trigger: ".section_container_carrusel ",
-                // start: 50
                 toggleActions: "restart"
             },
             opacity: 0,
@@ -51,7 +60,7 @@ export const Proyectos = () => {
         <section id={`${id_component[5]}`} className='section_container_carrusel g-padding-top-sections g-maxwidth-page'>
             <h2>{titulo}</h2>
             <div className='div_relative_blur'>
-            <div className='g-blur-blue-projects'></div>
+            {/* <div className='g-blur-blue-projects'></div> */}
 
                 <Slider {...settings} className='div_slider-proyectos'>
                     {listaProyectos.map((e) => (
@@ -68,7 +77,8 @@ export const Proyectos = () => {
                                 <a className='button_carrusel'
                                     target='_blank'
                                     href={e.href}>
-                                    {e.data}
+                                    <p>{e.data}</p>
+                                    <FiArrowUpRight />
                                 </a>
                             </div>
                         </section>
