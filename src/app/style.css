@@ -32,6 +32,10 @@ html {
 }
 .g-padding-top-sections {
   padding-top: 17rem;
+  @media (width < 1800px) {
+    padding-top: 6rem;
+
+  }
 }
 .g-boxshadow-blue{
   box-shadow:0 4px 14px 1px #5a5eff;
@@ -115,6 +119,10 @@ p {
 }
 .g-maxwidth-page {
   max-width: 1400px;
+  @media (width < 1800px) {
+    max-width: 900px;
+    
+  }
   @media (width < 900px) {
     max-width: 1000px;
   }
@@ -127,6 +135,10 @@ p {
   width: 13rem;
   z-index: 999;
   background-color: #ffffff28;
+  @media (width < 1800px) {
+    width: 10rem;
+    
+  }
   @media (width < 900px) {
     display: none;
   }
@@ -148,9 +160,13 @@ p {
     align-items: flex-start;
     padding: 1rem;
   }
-
+  
   a {
     font-size: 20px;
+    @media (width < 1800px) {
+      font-size: 15px;
+
+    }
   }
 }
 .nav_mobile {
