@@ -161,15 +161,19 @@
       }
       @media (width< 900px) {
         width: 415px;
-
+        
       }
-
+      
     }
   }
 }
 .g-subtitle-texts {
   color: #fff;
   font-size: var(--font-size_par);
+  @media (width< 900px) {
+    font-size: var(--font-size-laptop_par);
+    
+  }
 }
 .g-details-texts {
   color: #fff;
