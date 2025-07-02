@@ -450,15 +450,16 @@ h2 {
 }
 .section_carrusel {
   border-radius: var(--radius);
-  height: 39rem;
+  height: fit-content;
+  min-height: 355px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
   background: #02081d;
-  @media (width < 1800px) {
+  /* @media (width < 1800px) {
     height: 23rem;
-  }
+  } */
   /* &:hover{
     } */
   }
@@ -554,11 +555,11 @@ h2 {
     width: 618px;
     border-radius: var(--radius);
     @media (width < 1800px) {
+      width: 387px;
       
-      width: 371px;
     }
     @media (width < 900px) {
-      width: 423px;
+      width: 260px;
     }
   }
 }

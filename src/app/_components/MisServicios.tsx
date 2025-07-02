@@ -74,38 +74,7 @@ export const MisServicios = () => {
       <section className='grid_services'>
 
 
-        <Tilt className="background-stripes parallax-effect-glare-scale g-card-animated-desk appear_services" perspective={2500}
-          glareEnable={true}
-          glareMaxOpacity={0.45}>
-          <div className='border-box-line-blue-my-services'>
-
-            <div className='g-blur-blue-services'></div>
-            <h2 className='titles_center'>{servicios.titulos_servicios[0]}</h2>
-            <h2 className='titles_center'>{servicios.precios[0]}</h2>
-            <p className='split_payment text_decorated'>{servicios.sub_titulo_servicio[0]}</p>
-            <div className='div_ul-services'>
-              {
-                servicios.plan_basico.map(e => (
-                  <div key={e.id}>
-                    <img style={{ height: "auto", width: "30px" }} src="/icono-tick-servicios.svg" alt="icon service" />
-                    <div className="container">
-                      <p className={`${e.data_popup ? "hover-me" : ""}`}>{e.titulo}</p>
-                      {
-                        e.data_popup &&
-                        <div className="tooltip">
-                          <p>{e.data_popup}</p>
-                        </div>
-                      }
-                    </div>
-                  </div>
-                ))
-              }
-              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
-            </div>
-          </div>
-        </Tilt>
-        {/* SIN ANIMACION */}
-        <div className='border-box-line-blue-my-services g-card-animated-mobile appear_services'>
+        <div className='border-box-line-blue-my-services  appear_services'>
 
           <div className='g-blur-blue-services'></div>
           <h2 className='titles_center'>{servicios.titulos_servicios[0]}</h2>
@@ -115,7 +84,7 @@ export const MisServicios = () => {
             {
               servicios.plan_basico.map(e => (
                 <div key={e.id}>
-                  <img style={{ height: "auto", width: "30px" }} src="/icono-tick-servicios.svg" alt="icon service" />
+                  <img  src="/icono-tick-servicios.svg" alt="icon service" />
                   <div className="container">
                     <p className={`${e.data_popup ? "hover-me" : ""}`}>{e.titulo}</p>
                     {
@@ -131,31 +100,9 @@ export const MisServicios = () => {
             <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
-        <Tilt className="background-stripes parallax-effect-glare-scale g-card-animated-desk appear_services" perspective={2500}
-          glareEnable={true}
-          glareMaxOpacity={0.45}>
-
-          <div className='border-box-line-blue-my-services'>
-
-            <div className='g-blur-blue-services'></div>
-            <h2 className='titles_center'>{servicios.titulos_servicios[1]}</h2>
-            <h2 className='titles_center'>{servicios.precios[1]}</h2>
-            <p className='basic_plan-and-more'>{servicios.sub_titulo_servicio[1]}</p>
-            <div className='div_ul-services'>
-              {
-                servicios.plan_comercial.map(e => (
-                  <div key={e.id}>
-                    <img style={{ height: "auto", width: "30px" }} src="/icono-tick-servicios.svg" alt="icon service" />
-                    <p >{e.titulo}</p>
-                  </div>
-                ))
-              }
-              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
-            </div>
-          </div>
-        </Tilt>
+       
         {/* SIN ANIMACION */}
-        <div className='border-box-line-blue-my-services g-card-animated-mobile appear_services'>
+        <div className='border-box-line-blue-my-services appear_services'>
 
           <div className='g-blur-blue-services'></div>
           <h2 className='titles_center'>{servicios.titulos_servicios[1]}</h2>
@@ -165,7 +112,7 @@ export const MisServicios = () => {
             {
               servicios.plan_comercial.map(e => (
                 <div key={e.id}>
-                  <img style={{ height: "auto", width: "30px" }} src="/icono-tick-servicios.svg" alt="icon service" />
+                  <img src="/icono-tick-servicios.svg" alt="icon service" />
                   <p >{e.titulo}</p>
                 </div>
               ))
@@ -173,30 +120,9 @@ export const MisServicios = () => {
             <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
-        <Tilt className="background-stripes parallax-effect-glare-scale g-card-animated-desk appear_services" perspective={2500}
-          glareEnable={true}
-          glareMaxOpacity={0.45}>
-
-          <div className='border-box-line-blue-my-services '>
-            <div className='g-blur-blue-services'></div>
-            <h2 className='titles_center'>{servicios.titulos_servicios[2]}</h2>
-            <h2 className='titles_center'>{servicios.precios[2]}</h2>
-            <p className='basic_plan-and-more'>{servicios.sub_titulo_servicio[1]}</p>
-            <div className='div_ul-services'>
-              {
-                servicios.plan_amedida.map(e => (
-                  <div key={e.id}>
-                    <img style={{ height: "auto", width: "30px" }} src="/icono-tick-servicios.svg" alt="icon service" />
-                    <p className=''>{e.titulo}</p>
-                  </div>
-                ))
-              }
-              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
-            </div>
-          </div>
-        </Tilt>
+       
         {/* SIN ANIMACION */}
-        <div className='border-box-line-blue-my-services g-card-animated-mobile appear_services'>
+        <div className='border-box-line-blue-my-services  appear_services'>
           <div className='g-blur-blue-services'></div>
           <h2 className='titles_center'>{servicios.titulos_servicios[2]}</h2>
           <h2 className='titles_center'>{servicios.precios[2]}</h2>
@@ -205,7 +131,7 @@ export const MisServicios = () => {
             {
               servicios.plan_amedida.map(e => (
                 <div key={e.id}>
-                  <img style={{ height: "auto", width: "30px" }} src="/icono-tick-servicios.svg" alt="icon service" />
+                  <img  src="/icono-tick-servicios.svg" alt="icon service" />
                   <p className=''>{e.titulo}</p>
                 </div>
               ))
