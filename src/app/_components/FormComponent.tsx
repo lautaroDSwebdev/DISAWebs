@@ -7,7 +7,7 @@ import { useForm } from '@formspree/react';
 import { ToastContainer, toast } from 'react-toastify';
 export const FormComponent = () => {
     const [state, handleSubmit] = useForm('mgvydley');
-    gsap.registerPlugin(useGSAP, ScrollTrigger);
+    // gsap.registerPlugin(useGSAP, ScrollTrigger);
     const info = useContext(langCotext)
 
 
@@ -18,26 +18,26 @@ export const FormComponent = () => {
         useEffect(()=> {
 
 
-            gsap.from(".div_form   ", {
-                scrollTrigger: {
-                    trigger: ".div_form   ",
-                    // start: 50
-                    toggleActions: "restart"
-                },
-                opacity: 0,
-                x: 50,
-                duration: 2,
-            })
-            gsap.to(".div_form   ", {
-                scrollTrigger: {
-                    trigger: ".div_form   ",
-                    // start: 50
-                    toggleActions: "play"
-                },
-                opacity: 1,
-                x: 0,
-                duration: 2,
-            })
+            // gsap.from(".div_form   ", {
+            //     scrollTrigger: {
+            //         trigger: ".div_form   ",
+            //         // start: 50
+            //         toggleActions: "restart"
+            //     },
+            //     opacity: 0,
+            //     x: 50,
+            //     duration: 2,
+            // })
+            // gsap.to(".div_form   ", {
+            //     scrollTrigger: {
+            //         trigger: ".div_form   ",
+            //         // start: 50
+            //         toggleActions: "play"
+            //     },
+            //     opacity: 1,
+            //     x: 0,
+            //     duration: 2,
+            // })
     
     
     
