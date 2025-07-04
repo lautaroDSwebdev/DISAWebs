@@ -39,7 +39,7 @@ export const Nav = () => {
                 </select>
                 {
                     data?.data.nav_data.map(e => (
-                        <a className='nav_a' key={e.id} href={e.href}>{e.data}</a>
+                        <a className='nav_a hover-underline-animation left' key={e.id} href={e.href}>{e.data}</a>
                     ))
                 }
             </nav>

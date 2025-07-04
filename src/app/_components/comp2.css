@@ -385,6 +385,7 @@ form {
   button,
   select,
   textarea {
+    color: #ffffff;
     font-size: 1.3rem;
     font-weight: 600;
     margin: 1rem;
@@ -398,7 +399,6 @@ form {
     }
   }
   
-  
   button {
     outline-color: var(--color-blue);
     outline: solid 5px;
@@ -407,15 +407,19 @@ form {
     border-radius: 5px;
     background-color: #ffffff00;
   }
+  input::placeholder{
+
+    color: #ffffff;
+  }
   input,
   select,
   textarea {
+    color: #ffffff;
     border-radius: 3px;
     outline: solid 3px;
     padding: 5px;
     margin: 1rem;
     outline-color: var(--color-blue);
-    background-color: #ffffff00;
     background-color: var(--color-bg);
     &:focus {
       background-color: var(--color-blue);
