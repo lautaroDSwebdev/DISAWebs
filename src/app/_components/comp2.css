@@ -144,8 +144,8 @@
 .section_title_info_servicios > * {
   padding: 2rem 0;
   @media (width < 900px) {
-    
-    padding: 2rem 1rem;
+    text-align: center;
+    padding: 1rem;
   }
 }
 .grid_services {
@@ -163,6 +163,10 @@
   }
 }
 .div_div_list-services{
+  display: flex;
+  justify-content: center;
+}
+.div_services_reservar_a{
   display: flex;
   justify-content: center;
 }
@@ -368,6 +372,13 @@ form {
   gap: 1rem;
 }
 
+.div_element-center_form{
+  @media (width < 800px) {
+
+    display: flex;
+    justify-content: center;
+  }
+}
 .border-box-line-blue-form {
   margin: 2rem auto;
   padding: 3rem;
@@ -382,9 +393,8 @@ form {
   }
   @media (width < 1200px) {
     height: 46rem;
-
+    
   }
-  
 
   /* outline: solid 5px;
   outline-color: var(--color-blue); */

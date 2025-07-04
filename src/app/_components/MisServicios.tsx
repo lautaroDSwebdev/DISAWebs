@@ -99,7 +99,10 @@ export const MisServicios = () => {
                   </div>
                 ))
               }
-              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+              <div className='div_services_reservar_a'>
+
+                <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+              </div>
             </div>
           </div>
         </div>
@@ -122,7 +125,10 @@ export const MisServicios = () => {
                   </div>
                 ))
               }
-              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+              <div className='div_services_reservar_a'>
+
+                <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+              </div>
             </div>
           </div>
         </div>
@@ -144,7 +150,10 @@ export const MisServicios = () => {
                   </div>
                 ))
               }
-              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+              <div className='div_services_reservar_a'>
+
+                <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+              </div>
             </div>
           </div>
         </div>

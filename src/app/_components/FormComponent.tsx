@@ -46,30 +46,36 @@ export const FormComponent = () => {
         <div className='g-padding-top-sections'>
 
             <div id={id_contact[8]} className='g-maxwidth-page div_form '>
-                <h2>Consultanos</h2>
+                <div className='div_element-center_form'>
+
+                    <h2>Consultanos</h2>
+                </div>
                 {/* <div className='div_form_image'>
                     <img src="/programacion_design.png" alt="" />
                 </div> */}
 
-                    <form onSubmit={handleSubmit} className='border-box-line-blue-form blur-blue-how-work g-boxshadow-blue' >
-                        {/* <label htmlFor="nombre">{form_info.label[0]}</label> */}
-                        <input placeholder={form_info.label[0]} id='nombre' name='nombre' type="text" />
+                <form onSubmit={handleSubmit} className='border-box-line-blue-form blur-blue-how-work g-boxshadow-blue' >
+                    {/* <label htmlFor="nombre">{form_info.label[0]}</label> */}
+                    <input placeholder={form_info.label[0]} id='nombre' name='nombre' type="text" />
 
-                        {/* <label htmlFor="mail">{form_info.label[1]}</label> */}
-                        <input placeholder={form_info.label[1]} id='mail' name='mail' type="email" />
+                    {/* <label htmlFor="mail">{form_info.label[1]}</label> */}
+                    <input placeholder={form_info.label[1]} id='mail' name='mail' type="email" />
 
-                        {/* <label htmlFor="telefono">{form_info.label[2]}</label> */}
-                        <input placeholder={form_info.label[2]} id='telefono' name='telefono' type="text" />
+                    {/* <label htmlFor="telefono">{form_info.label[2]}</label> */}
+                    <input placeholder={form_info.label[2]} id='telefono' name='telefono' type="text" />
 
-                        <label htmlFor="plan">{form_info.label[3]}</label>
-                        <select name='plan' >
-                            <option value={form_info.opcions[0]}>{form_info.opcions[0]}</option>
-                            <option value={form_info.opcions[1]}>{form_info.opcions[1]}</option>
-                            <option value={form_info.opcions[2]}>{form_info.opcions[2]}</option>
-                        </select>
-                        <textarea name='mensaje' placeholder={form_info.textArea} />
+                    <label htmlFor="plan">{form_info.label[3]}</label>
+                    <select name='plan' >
+                        <option value={form_info.opcions[0]}>{form_info.opcions[0]}</option>
+                        <option value={form_info.opcions[1]}>{form_info.opcions[1]}</option>
+                        <option value={form_info.opcions[2]}>{form_info.opcions[2]}</option>
+                    </select>
+                    <textarea name='mensaje' placeholder={form_info.textArea} />
+                    {/* <div className='div_element-center_form'>
+                    </div> */}
+
                         <button onClick={() => toast.success("Pedido enviado ✅")} type="submit" disabled={state.submitting}>Enviar</button>
-                    </form>
+                </form>
             </div>
         </div>
     )
