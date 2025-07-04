@@ -231,7 +231,11 @@ p {
       width: 50px;
       @media (width < 1200px) {
         width: 30px;
-
+        
+      }
+      @media (width < 800px) {
+        
+        width: 65px;
       }
     }
   }
