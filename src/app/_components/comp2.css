@@ -1,6 +1,6 @@
 :root {
   --font-size_par: 1.7rem;
-  --font-size-laptop_par: 1.2rem;
+  --font-size-laptop_par: 1.1rem;
   --font-size_detail_par: 1.2rem;
   --font-size_title: 2.5rem;
   --font-size_par_mobile: 1.4rem;
@@ -28,6 +28,9 @@
   @media (width < 900px) {
     display: flex;
     justify-content: center;
+    h2{
+      text-align: center;
+    }
   }
 }
 
@@ -45,12 +48,23 @@
     min-width: 17rem;
     /* height: 42rem; */
   }
+  @media (width < 1200px) {
+    min-width: 14rem;
+
+  }
   &:hover {
     outline: solid 5px;
     outline-color: var(--color-blue);
   }
 }
+.section_container_carrusel{
+  @media (width < 800px) {
+    h2{
+      text-align: center;
+    }
 
+  }
+}
 .blur-blue-how-work {
   z-index: 999;
   background-image: url('/blur-blue-big.png');
@@ -69,7 +83,7 @@
   background-image: url('/blur-sombra-azul-services.png');
   background-position: center -13rem;
   background-repeat: no-repeat;
-  background-size: 34rem;
+  background-size: 31rem;
   width: 101%;
   height: 40%;
   position: absolute;
@@ -138,6 +152,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  @media (width < 1200px) {
+    gap: 1rem;
+    
+  }
   @media (width < 900px) {
     padding: 2rem;
     grid-template-columns: repeat(1, 1fr);
@@ -151,7 +169,12 @@
   gap: 1rem;
   @media (width < 1800px) {
     padding: 1rem 0 0 2rem;
-
+    
+  }
+  @media (width < 1200px) {
+    padding: 0rem 0 0 1rem;
+    gap: 3px;
+    
   }
   div {
     display: flex;
@@ -166,6 +189,10 @@
   img{
     height: auto;
     width: 30px;
+    @media (width < 1200px) {
+      width: 18px;
+      
+    }
   }
   a {
     outline: solid 2px;
@@ -189,6 +216,10 @@
       left: 30px;
       top: 39rem;
       
+    }
+    @media (width < 1200px) {
+      
+      padding: .5rem;
     }
     @media (width < 800px) {
       
@@ -316,6 +347,7 @@
   }
 }
 .div_form {
+ 
   @media (width < 800px) {
     
     padding: 0 2rem;
@@ -336,6 +368,16 @@ form {
   border-radius: var(--radius);
   box-sizing: border-box;
   height: 64rem;
+  @media (width < 1800px) {
+    height: 46rem;
+    
+  }
+  @media (width < 1200px) {
+    height: 46rem;
+
+  }
+  
+
   /* outline: solid 5px;
   outline-color: var(--color-blue); */
   input,
@@ -343,7 +385,6 @@ form {
   button,
   select,
   textarea {
-    color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
     margin: 1rem;
@@ -356,7 +397,8 @@ form {
       background: var(--color-blue);
     }
   }
-
+  
+  
   button {
     outline-color: var(--color-blue);
     outline: solid 5px;
@@ -374,6 +416,7 @@ form {
     margin: 1rem;
     outline-color: var(--color-blue);
     background-color: #ffffff00;
+    background-color: var(--color-bg);
     &:focus {
       background-color: var(--color-blue);
     }

@@ -3,7 +3,7 @@ import { langCotext } from '../_context/LanguageContext'
 import { FaSquareInstagram, FaSquareWhatsapp } from 'react-icons/fa6'
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {gsap} from 'gsap';
+import { gsap } from 'gsap';
 
 export const Empecemos = () => {
     gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -11,7 +11,7 @@ export const Empecemos = () => {
     if (!info) return null
     const empecemos = info.data.comencemos
     const empecemos_id = info.data.ids_component
-    useEffect(()=> {
+    useEffect(() => {
 
 
         gsap.from(".section_comencemos  ", {
@@ -37,7 +37,7 @@ export const Empecemos = () => {
 
 
 
-    },[])
+    }, [])
     return (
         <div className='g-padding-top-sections'>
 
@@ -52,9 +52,11 @@ export const Empecemos = () => {
                         <div className='redes'>
                             {
                                 empecemos.array_redes.map(e => (
-                                    <a className='g-element-scale-transition' key={e.id} href={e.href} target='_blank' >{e.data}
-
-                                        {e.data === "mi whatsapp" ? <FaSquareWhatsapp /> : <FaSquareInstagram />}
+                                    <a className='' key={e.id} href={e.href} target='_blank' >
+                                        <div>
+                                            <p>{e.data}</p>
+                                            {e.data === "mi whatsapp" ? <FaSquareWhatsapp /> : <FaSquareInstagram />}
+                                        </div>
                                     </a>
                                 ))
                             }

@@ -19,11 +19,11 @@ export const Proyectos = () => {
         slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
             }
         ]
     };
@@ -60,7 +60,7 @@ export const Proyectos = () => {
         <section id={`${id_component[5]}`} className='section_container_carrusel g-padding-top-sections g-maxwidth-page'>
             <h2>{titulo}</h2>
             <div className='div_relative_blur'>
-            {/* <div className='g-blur-blue-projects'></div> */}
+                {/* <div className='g-blur-blue-projects'></div> */}
 
                 <Slider {...settings} className='div_slider-proyectos'>
                     {listaProyectos.map((e) => (

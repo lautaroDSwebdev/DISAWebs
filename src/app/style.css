@@ -123,8 +123,8 @@ p {
     max-width: 900px;
     
   }
-  @media (width < 900px) {
-    max-width: 1000px;
+  @media (width < 1200px) {
+    max-width: 700px;
   }
   margin: auto;
 }
@@ -147,6 +147,14 @@ p {
     width: 8rem;
     transition: all ease-in-out 0.3s;
     transform: scale(1, 1);
+    @media (width < 1800px) {
+      
+      width: 6rem;
+    }
+    @media (width < 1200px) {
+      width: 5rem;
+
+    }
     &:hover {
       transform: scale(1.1, 1.1);
     }
@@ -157,6 +165,10 @@ p {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    @media (width < 1800px) {
+      gap: 1rem;
+
+    }
     align-items: flex-start;
     padding: 1rem;
   }
@@ -165,7 +177,7 @@ p {
     font-size: 20px;
     @media (width < 1800px) {
       font-size: 15px;
-
+      
     }
   }
 }
@@ -190,6 +202,10 @@ p {
     img {
       height: auto;
       width: 50px;
+      @media (width < 1200px) {
+        width: 30px;
+
+      }
     }
   }
   @media (width > 900px) {

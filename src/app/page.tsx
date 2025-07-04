@@ -17,6 +17,7 @@ import "./style.css"
 import "./_components/comp.css"
 import "./_components/comp2.css"
 import "./_components/carrusel.css"
+import "./_components/responsive.css"
 import { ArrowUp } from "./_reusable/Arrow";
 import { ToastContainer } from 'react-toastify';
 export default function Home() {
