@@ -620,14 +620,8 @@ h2 {
   display: flex;
   justify-content: center;
   z-index: 999;
-  @media (width < 1800px) {
-    width: 91%;
-
-  }
-  @media (width < 1200px) {
-    width: 92%;
-
-  }
+ 
+  
   img{
     height: auto;
     width: 476px;
@@ -655,13 +649,5 @@ h2 {
   height: 55%;
   position: absolute;
   bottom: -148px;
-  @media (width <900px) {
-    background-position: -12rem -4rem;
-    background-repeat: no-repeat;
-    background-size: 33rem;
-    width: 110%;
-    height: 54%;
-    position: absolute;
-    bottom: -148px;
-  }
+  
 }

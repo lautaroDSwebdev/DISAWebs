@@ -386,9 +386,8 @@ form {
   overflow: hidden;
   border-radius: var(--radius);
   box-sizing: border-box;
-  height: 64rem;
+  height: 46rem;
   @media (width < 1800px) {
-    height: 46rem;
     
   }
   @media (width < 1200px) {
