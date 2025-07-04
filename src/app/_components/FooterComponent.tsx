@@ -20,11 +20,11 @@ export const FooterComponent = () => {
       <div className='div_footer '>
         <div className='ball-blur-right-footer'></div>
         <div className='ball-blur-left-footer'></div>
-        <section className='g-maxwidth-page section_footer'>
+        <section className=' section_footer'>
           <div>
             <h2>{titleFooter}</h2>
             <p className='info_hours'><FaRegClock />{hourInfo}</p>
-            <a href={`#${ids[0]}`}>regresar al inicio</a>
+            {/* <a href={`#${ids[0]}`}>regresar al inicio</a> */}
           </div>
           <div className='div_contact'>
             {

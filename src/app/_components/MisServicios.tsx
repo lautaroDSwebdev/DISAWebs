@@ -18,8 +18,8 @@ export const MisServicios = () => {
   const empecemos_redirigir = info.data.ids_component,
     id_services = info.data.ids_component
 
-    
-    useEffect(() => {
+
+  useEffect(() => {
     let texto_div = SplitText.create(".texto_animado", {
       type: "chars,words"
     });
@@ -28,9 +28,9 @@ export const MisServicios = () => {
       duration: 1,
       autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
       scrollTrigger: {
-          trigger: ".texto_animado",
-          toggleActions: "restart"
-      ,
+        trigger: ".texto_animado",
+        toggleActions: "restart"
+        ,
       },
       stagger: {
         amount: .8,
@@ -84,7 +84,7 @@ export const MisServicios = () => {
             {
               servicios.plan_basico.map(e => (
                 <div key={e.id}>
-                  <img  src="/icono-tick-servicios.svg" alt="icon service" />
+                  <img src="/icono-tick-servicios.svg" alt="icon service" />
                   <div className="container">
                     <p className={`${e.data_popup ? "hover-me" : ""}`}>{e.titulo}</p>
                     {
@@ -100,7 +100,7 @@ export const MisServicios = () => {
             <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
-       
+
         {/* SIN ANIMACION */}
         <div className='border-box-line-blue-my-services appear_services'>
 
@@ -120,28 +120,31 @@ export const MisServicios = () => {
             <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
           </div>
         </div>
-       
+
         {/* SIN ANIMACION */}
         <div className='border-box-line-blue-my-services  appear_services'>
           <div className='g-blur-blue-services'></div>
           <h2 className='titles_center'>{servicios.titulos_servicios[2]}</h2>
           <h2 className='titles_center'>{servicios.precios[2]}</h2>
           <p className='basic_plan-and-more'>{servicios.sub_titulo_servicio[1]}</p>
-          <div className='div_ul-services'>
-            {
-              servicios.plan_amedida.map(e => (
-                <div key={e.id}>
-                  <img  src="/icono-tick-servicios.svg" alt="icon service" />
-                  <p className=''>{e.titulo}</p>
-                </div>
-              ))
-            }
-            <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+          <div className='div_div_list-services'>
+
+            <div className='div_ul-services'>
+              {
+                servicios.plan_amedida.map(e => (
+                  <div key={e.id}>
+                    <img src="/icono-tick-servicios.svg" alt="icon service" />
+                    <p className=''>{e.titulo}</p>
+                  </div>
+                ))
+              }
+              <a className='g-element-scale-transition' href={`#${empecemos_redirigir[4]}`}>Reservar</a >
+            </div>
           </div>
         </div>
 
       </section >
-     
+
     </div >
 
   )
