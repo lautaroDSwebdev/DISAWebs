@@ -462,8 +462,12 @@ form {
   height: 30vh;
   margin: auto;
   
-  @media (width <1800px) {
+  @media (width > 1800px) {
+    max-width: 1000px;
 
+  }
+  @media (width <1800px) {
+    
     max-width: 828px;
   }
   @media (width <1200px) {
