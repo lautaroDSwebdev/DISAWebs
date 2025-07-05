@@ -31,34 +31,34 @@ export const dataEs = {
         precios: ["$250 ARS", "$350 ARS", "$450 ARS"],
         sub_titulo_servicio: ["dividido en dos pagos", "Lo del plan básico, plus..."],
         plan_basico: [
-            { id: 1, titulo: "Pagina única", },
-            { id: 2, titulo: "Diseño responsive", data_popup: "Adaptado para multiples tipos de pantalla" },
+            { id: 1, titulo: "Página única", },
+            { id: 2, titulo: "Diseño responsive", data_popup: "Adaptado para múltiples tipos de pantalla" },
             { id: 3, titulo: "Integración con redes sociales", },
-            { id: 4, titulo: "Search Engine Optimization (SEO)", data_popup: "Se puede buscar organicamente en google tu pagina " },
+            { id: 4, titulo: "Search Engine Optimization (SEO)", data_popup: "Se puede buscar orgánicamente en Google tu página " },
             { id: 5, titulo: "Desarrollo de 4 semanas" },
-            { id: 6, titulo: "Boton de contacto directo", data_popup: "enviar al cliente directamente a tus redes con un click o tocando con el dedo en el icono" },
+            { id: 6, titulo: "Botón de contacto directo", data_popup: "Enviar al cliente directamente a tus redes con un clic o tocando con el dedo en el icono" },
             { id: 7, titulo: "Dominio custom (opcional)", data_popup: ".com .ar .es (ejemplos de dominios)" },
             { id: 8, titulo: "Formulario de contacto", },
         ],
         plan_comercial: [
-            { id: 1, titulo: "Unica o Multi pagina" },
-            { id: 2, titulo: "Carrusel de imagenes o testimonios" },
+            { id: 1, titulo: "Única o Multi página" },
+            { id: 2, titulo: "Carrusel de imágenes o testimonios" },
             { id: 3, titulo: "Desarrollo de 4 a 5 semanas" },
-            { id: 4, titulo: "3 revisiónes" },
-            { id: 5, titulo: "Opcion para cambio de idióma (opcional)" },
+            { id: 4, titulo: "3 revisiones" },
+            { id: 5, titulo: "Opción para cambio de idioma (opcional)" },
         ],
         plan_amedida: [
-            { id: 1, titulo: "Pagina unica o Multi pagina" },
+            { id: 1, titulo: "Página única o Multi página" },
             { id: 2, titulo: "5 revisiones" },
-            { id: 3, titulo: "Opcion para cambio de idióma (opcional)" },
+            { id: 3, titulo: "Opción para cambio de idioma (opcional)" },
             { id: 4, titulo: "Modo oscuro/claro" },
-            { id: 5, titulo: "Carrusel de imágenes o testimónios" },
-            { id: 6, titulo: "Integración con mapas y calendários (opcional)" },
+            { id: 5, titulo: "Carrusel de imágenes o testimonios" },
+            { id: 6, titulo: "Integración con mapas y calendarios (opcional)" },
         ]
     },
     fotterInfo: {
-        title: "Hablémos de tu proyécto",
-        hours: "Lunes a Viernes - 8:00 am a 18:00pm (ARG)",
+        title: "Hablemos de tu proyecto",
+        hours: "Lunes a Viernes - 8:00 am a 18:00 pm (ARG)",
         copyright: "Copyright © DISAWebs todos los derechos reservados",
         contact: [
             { id: 453, text: "+54 2494379804", url: "https://api.whatsapp.com/send?phone=5492494379804", icon: "ri_whatsapp-fill.svg" },
@@ -98,8 +98,8 @@ export const dataEs = {
         ]
     },
     makingRealityYourProject: {
-        title: ["Haciendo realidad", "tus ideas y projectos"],
-        text_icons: ["Proyectos hechos", "Miembro apasionado", "Lineas de codigo"]
+        title: ["Haciendo realidad", "tus ideas y proyectos"],
+        text_icons: ["Proyectos hechos", "Miembro apasionado", "Líneas de código"]
     },
     form: {
         label: ["Tu nombre y apellido", "Tu email", "Tu telefono", "Plan de interes", "Mas al respecto"],

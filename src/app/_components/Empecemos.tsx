@@ -53,7 +53,7 @@ export const Empecemos = () => {
                             {
                                 empecemos.array_redes.map(e => (
                                     <a className='' key={e.id} href={e.href} target='_blank' >
-                                        <div>
+                                        <div className='div_data_empecemos'>
                                             <p>{e.data}</p>
                                             {e.data === "mi whatsapp" ? <FaSquareWhatsapp /> : <FaSquareInstagram />}
                                         </div>

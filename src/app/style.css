@@ -248,6 +248,7 @@ p {
   flex-flow: column;
   justify-content: space-evenly;
   padding: 1rem;
+  align-items: center;
   nav {
     flex-flow: column;
     height: 40vh;
@@ -299,6 +300,11 @@ a {
 }
 .div_ayudarte {
   text-align: center;
+  @media (width < 800px) {
+    margin-top: 10rem;
+    padding: 1rem;
+    
+  }
 }
 .nav_a {
 }

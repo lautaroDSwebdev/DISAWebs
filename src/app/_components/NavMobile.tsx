@@ -26,16 +26,16 @@ export const NavMobile = () => {
             </div>
 
             <div className={`div_select g-blur-bg ${state ? "mobile_options_open" : "mobile_options"}`}>
-                <select className='btn_lang' onChange={data?.HandleLanguage}>
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
-                </select>
 
                 <nav>
                     {lista_nav.map(e => (
                         <a onClick={() => setState(!state)} key={e.id} href={e.href}>{e.data}</a>
                     ))}
                 </nav>
+                <select className='btn_lang' onChange={data?.HandleLanguage}>
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
                 <div className='div_svg_close'>
 
                     <CgClose onClick={() => setState(!state)} />
