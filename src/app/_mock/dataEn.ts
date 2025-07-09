@@ -1,5 +1,5 @@
 export const dataEn = {
-    ids_component: ["Begin","Help-you", "¿Why-a-website?", "About-me", "Lets begin", "Projects", "How-i-work", "My-Services", "Contact-me"],
+    ids_component: ["Begin", "Help-you", "¿Why-a-website?", "About-me", "Lets begin", "Projects", "How-i-work", "My-Services", "Contact-me"],
     nav_data: [
         { id: 1, href: "#Help-you", data: "Help-you" },
         { id: 2, href: "#¿Why-a-website?", data: "¿Why a website?" },
@@ -28,8 +28,28 @@ export const dataEn = {
     comencemos: {
         titulo: "Lets begin to work together",
         array_redes: [
-            {id: 1, data: "my whatsapp", href: "https://api.whatsapp.com/send?phone=5492494379804"},
-            {id: 2, data: "my instagram", href: "https://www.instagram.com/lautarodisalvo_frontdev?igsh=MXJkc3hjdDJ2amFseg=="}
+            { id: 1, data: "my whatsapp", href: "https://api.whatsapp.com/send?phone=5492494379804" },
+            { id: 2, data: "my instagram", href: "https://www.instagram.com/lautarodisalvo_frontdev?igsh=MXJkc3hjdDJ2amFseg==" }
+        ]
+    },
+    carruselProyectos: {
+        titulo: "Projects",
+        listaProyectos: [
+            { id: 1, href: "https://plazahotel.netlify.app/", data: "Hotel Plaza Web", img: "/imagen-hotel-plaza.png" },
+            { id: 2, href: "https://webdisalvo.netlify.app/", data: "My personal portfolio", img: "/imagen-portfolio.png" },
+            { id: 3, href: "https://caprichoso.netlify.app/home/", data: "Caprichoso Web", img: "/imagen-caprichoso.png" },
+            { id: 4, href: "https://masfarmaciareplica.netlify.app/", data: "pharmacy Web", img: "/imagen-farmacia.webp" }
+        ],
+
+    },
+    fotterInfo: {
+        title: "Lets talk of your projéct",
+        hours: "Monday a Friday - 8:00 am a 18:00pm (ARG)",
+        copyright: "Copyright © DISAWebs all rights deserved",
+        contact: [
+            { id: 453, text: "+54 2494379804", url: "https://api.whatsapp.com/send?phone=5492494379804", icon: "ri_whatsapp-fill.svg" },
+            { id: 454, text: "Lautaro Di Salvo", url: "https://www.linkedin.com/in/ldsfrontend/", icon: "uil_linkedin.svg" },
+            { id: 353, text: "lautarodisalvo_frontdev", url: "https://www.instagram.com/lautarodisalvo_frontdev", icon: "mdi_instagram.svg" }
         ]
     },
     regresar: "Return 🔼",
@@ -66,27 +86,27 @@ export const dataEn = {
             { id: 6, titulo: "Map and calendar integration (optional)" },
         ]
     },
-    
+
     comoTrabajo: {
         titulo: "How i work",
         box_titulo: "Organization, creativity and technology are the most important pillars of my way of working",
-        así_trabajo_array:[
-            {id: 1, img : "/analisis-ideas.svg", data: "Analysis of your ideas"},
-            {id: 2, img : "/lapis-desarrollo-ideas.png", data: "Design tailored to your ideas"},
-            {id: 3, img : "/computer.svg", data: "develop of your ideas"},
-            {id: 4, img : "/cohete-deploy.svg", data: "Deploy your projects on the internet"},
-        ] 
+        así_trabajo_array: [
+            { id: 1, img: "/analisis-ideas.svg", data: "Analysis of your ideas" },
+            { id: 2, img: "/lapis-desarrollo-ideas.png", data: "Design tailored to your ideas" },
+            { id: 3, img: "/computer.svg", data: "develop of your ideas" },
+            { id: 4, img: "/cohete-deploy.svg", data: "Deploy your projects on the internet" },
+        ]
     },
     form: {
         label: ["Your full name", "Your email", "Your phone", "Plan of interest", "More about it"],
         opcions: ["basic plan", "comertial plan", "custom plan"],
         textArea: "Tell me more"
     },
-    
-   makingRealityYourProject: {
-    title: ["Making reality ", "your ideas and projects"],
-    text_icons: ["Projects Maked", "Pasionnated member", "lines of code"]
-   },
+
+    makingRealityYourProject: {
+        title: ["Making reality ", "your ideas and projects"],
+        text_icons: ["Projects Maked", "Pasionnated member", "lines of code"]
+    },
     ayudarte: [
         "How can i ", "help-you", "I provide quality products for the following services"
     ]

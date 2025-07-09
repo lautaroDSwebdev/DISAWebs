@@ -1,5 +1,5 @@
 "use client"
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { langCotext } from '../_context/LanguageContext'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -11,18 +11,7 @@ export const Header = () => {
 
 
     useEffect(() => {
-        let texto_div = SplitText.create(".nav_a", {
-            type: "chars,words "
-        });
-        gsap.from(texto_div.chars, {
-            y: 50,       // animate from 100px below
-            duration: 1,
-            autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
-            stagger: {
-                amount: .8,
-                from: "end"
-            } // 0.05 seconds between each
-        });
+       
         // gsap.from(".header_section", {
         //     y: -100,
         //     opacity: 0,
@@ -59,10 +48,21 @@ export const Header = () => {
 
         gsap.from(".image", {
             opacity: 0,
-            duration: 5,
+            duration: 2.5,
+            delay: 1,
+            x: -50,
             scrollTrigger: {
                 trigger: ".image",
-                start: 150
+                // start: 150
+            }
+        })
+        gsap.to(".image", {
+            opacity: 1,
+            duration: 2.5,
+            x: 0,
+            scrollTrigger: {
+                trigger: ".image",
+                // start: 150
             }
         })
 
@@ -71,19 +71,18 @@ export const Header = () => {
     if (!info) return null
     const data = info.data.ids_component
     return (
-        <article>
-            {/* <div className='blur-blue-left-header '></div> */}
+        <header>
             <div className='ball-blur-purple-right-header '></div>
 
             <section id={data[0]} className='header_section g-maxwidth-page '>
                 <div className='texto_div'>
                     <h1 className='texto_animado'>{info?.data.destacaHeader[0]}</h1>
-                    <p className='texto_animado2'>{info?.data.destacaHeader[1]}</p>
+                    <p className='texto_animado'>{info?.data.destacaHeader[1]}</p>
                 </div>
                 <div>
                     <img className='image' src="/logo-pagina-png.png" alt="imagen" />
                 </div>
             </section>
-        </article>
+        </header>
     )
 }

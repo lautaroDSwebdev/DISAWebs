@@ -11,7 +11,7 @@ export const Nav = () => {
     gsap.registerPlugin(useGSAP, SplitText);
 
     useEffect(() => {
-        let texto_div = SplitText.create("section_nav a", {
+        let texto_div = SplitText.create(".section_nav .nav_a", {
             type: "chars,words "
         });
         gsap.from(texto_div.chars, {
@@ -23,10 +23,10 @@ export const Nav = () => {
                 from: "end"
             } // 0.05 seconds between each
         });
-       
+
     }, [])
     return (
-        <section className={`section_nav g-lightblue-bg `}>
+        <section className={`section_nav g-blur-bg `} >
             <nav className='g-maxwidth-page '>
                 <div>
                     <a href={`#${id_comback[0]}`}>
@@ -39,10 +39,9 @@ export const Nav = () => {
                 </select>
                 {
                     data?.data.nav_data.map(e => (
-                        <a className='nav_a' key={e.id} href={e.href}>{e.data}</a>
+                        <a className='nav_a hover-underline-animation left' key={e.id} href={e.href}>{e.data}</a>
                     ))
                 }
-
             </nav>
         </section>
     )

@@ -1,30 +1,91 @@
-import React, { useContext } from 'react'
-import { langCotext } from '../_context/LanguageContext';
-import useEmblaCarousel from 'embla-carousel-react'
+import React, { useContext, useEffect } from 'react'
+// import Autoplay from 'embla-carousel-autoplay'
+// import useEmblaCarousel from 'embla-carousel-react'
+import { langCotext } from '../_context/LanguageContext'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
+import { FiArrowUpRight } from "react-icons/fi";
 export const Proyectos = () => {
-    const info = useContext(langCotext)
-    const [emblaRef] = useEmblaCarousel()
-    return (
-        <div id='Proyectos' className='div_component ' >
-            Seccion en proceso 
-            {/* revisar esta documentacion con generador 
-            https://www.embla-carousel.com/examples/generator/
-            */}
-            {/* <article className='article_carrusel embla' ref={emblaRef}>
+    gsap.registerPlugin(useGSAP, ScrollTrigger);
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+    useEffect(() => {
+        gsap.from(".section_container_carrusel ", {
+            scrollTrigger: {
+                trigger: ".section_container_carrusel ",
+                toggleActions: "restart"
+            },
+            opacity: 0,
+            y: -50,
+            duration: 3,
+        })
+        gsap.to(".section_container_carrusel ", {
+            scrollTrigger: {
+                trigger: ".section_container_carrusel ",
+                // start: 50
+                toggleActions: "play"
+            },
+            opacity: 1,
+            y: 0,
+            duration: 3,
+        })
 
-                <section className='embla__container' >
-                    {
-                        info?.data.carruselProyectos.map(e => (
-                            <div className='div_carrusel border-box-line-white embla__slide' key={e.id} >
-                                <a className='carrusel_a' target='_blank' href={e.href}  >
-                                    <img src={e.img} alt={e.data} />
-                                    <p >{e.data}</p>
+    }, [])
+    const data = useContext(langCotext)
+    if (!data) return null
+    const id_component = data.data.ids_component
+    const dataProjects = data.data.carruselProyectos,
+        listaProyectos = dataProjects.listaProyectos,
+        titulo = dataProjects.titulo
+    return (
+
+        <section id={`${id_component[5]}`} className='section_container_carrusel g-padding-top-sections g-maxwidth-page'>
+            <h2>{titulo}</h2>
+            <div className='div_relative_blur'>
+                {/* <div className='g-blur-blue-projects'></div> */}
+
+                <Slider {...settings} className='div_slider-proyectos'>
+                    {listaProyectos.map((e) => (
+                        <section key={e.id} className='section_carrusel'>
+                            <a href={e.href} target='_blank' className='div_carrusel_img'>
+                                <img
+                                    src={e.img}
+                                    alt={e.data}
+                                    className=''
+                                />
+                            </a>
+                            <div className='div_button_proyectos'>
+
+                                <a className='button_carrusel'
+                                    target='_blank'
+                                    href={e.href}>
+                                    <p>{e.data}</p>
+                                    <FiArrowUpRight />
                                 </a>
                             </div>
-                        ))
-                    }
-                </section>
-            </article> */}
-        </div >
+                        </section>
+                    ))}
+                </Slider>
+            </div>
+        </section>
     )
 }
+
