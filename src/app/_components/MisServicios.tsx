@@ -38,18 +38,18 @@ export const MisServicios = () => {
       } // 0.05 seconds between each
     });
 
-    gsap.from(".appear_services", {
+    gsap.from(".appear_services animation_image_style", {
       scrollTrigger: {
-        trigger: ".appear_services",
+        trigger: ".appear_services animation_image_style",
         toggleActions: "restart"
       },
       opacity: 0,
       x: -50,
       duration: 2,
     })
-    gsap.to(".appear_services", {
+    gsap.to(".appear_services animation_image_style", {
       scrollTrigger: {
-        trigger: ".appear_services",
+        trigger: ".appear_services animation_image_style",
         toggleActions: "play"
       },
       opacity: 1,
@@ -74,11 +74,11 @@ export const MisServicios = () => {
       <section className='grid_services'>
 
 
-        <div className='border-box-line-blue-my-services  appear_services'>
+        <div className='border-box-line-blue-my-services  appear_services animation_image_style'>
 
           <div className='g-blur-blue-services'></div>
-          <h2 className='titles_center'>{servicios.titulos_servicios[0]}</h2>
-          <h2 className='titles_center'>{servicios.precios[0]}</h2>
+          <h2 className='titles_center animation_color_title'>{servicios.titulos_servicios[0]}</h2>
+          <h2 className='titles_center animation_color_title'>{servicios.precios[0]}</h2>
           <p className='split_payment text_decorated'>{servicios.sub_titulo_servicio[0]}</p>
           <div className='div_div_list-services'>
 
@@ -88,7 +88,7 @@ export const MisServicios = () => {
                   <div key={e.id}>
                     <img src="/icono-tick-servicios.svg" alt="icon service" />
                     <div className="container">
-                      <p className={`${e.data_popup ? "hover-me" : ""}`}>{e.titulo}</p>
+                      <p className={` title_service ${e.data_popup ? "hover-me" : ""}`}>{e.titulo}</p>
                       {
                         e.data_popup &&
                         <div className="tooltip">
@@ -108,7 +108,7 @@ export const MisServicios = () => {
         </div>
 
         {/* SIN ANIMACION */}
-        <div className='border-box-line-blue-my-services appear_services'>
+        <div className='border-box-line-blue-my-services appear_services animation_image_style'>
 
           <div className='g-blur-blue-services'></div>
           <h2 className='titles_center'>{servicios.titulos_servicios[1]}</h2>
@@ -121,7 +121,7 @@ export const MisServicios = () => {
                 servicios.plan_comercial.map(e => (
                   <div key={e.id}>
                     <img src="/icono-tick-servicios.svg" alt="icon service" />
-                    <p >{e.titulo}</p>
+                    <p className='title_service'>{e.titulo}</p>
                   </div>
                 ))
               }
@@ -134,7 +134,7 @@ export const MisServicios = () => {
         </div>
 
         {/* SIN ANIMACION */}
-        <div className='border-box-line-blue-my-services  appear_services'>
+        <div className='border-box-line-blue-my-services  appear_services animation_image_style'>
           <div className='g-blur-blue-services'></div>
           <h2 className='titles_center'>{servicios.titulos_servicios[2]}</h2>
           <h2 className='titles_center'>{servicios.precios[2]}</h2>
@@ -146,7 +146,7 @@ export const MisServicios = () => {
                 servicios.plan_amedida.map(e => (
                   <div key={e.id}>
                     <img src="/icono-tick-servicios.svg" alt="icon service" />
-                    <p className=''>{e.titulo}</p>
+                    <p className='title_service'>{e.titulo}</p>
                   </div>
                 ))
               }

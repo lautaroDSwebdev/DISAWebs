@@ -38,18 +38,9 @@ export const VentajasNegocio = () => {
             <section id={data[2]} className='div_center section_ventajas g-maxwidth-page'>
                 <h2>{info?.data.ventajasSection.titulo}</h2>
                 <div className='div_ventajas'>
-                    {/* {info?.data.ventajasSection.razones.map(e => (
-                        <Tilt key={e.id} className="g-card-animated-desk" perspective={3500}
-                            glareEnable={false}
-                            glareMaxOpacity={0.10}>
-                            <ul className='border-box-line-blue  ul_ventajas ' >
-                                <b>{e.titulo_razon}</b>
-                                <p>{e.sub_titulo}</p>
-                            </ul>
-                        </Tilt>
-                    ))} */}
+                   
                     {info?.data.ventajasSection.razones.map(e => (
-                        <ul className='border-box-line-blue  ul_ventajas ' key={e.id}>
+                        <ul className='border-box-line-blue  ul_ventajas animation_image_style' key={e.id}>
                             <b>{e.titulo_razon}</b>
                             <p>{e.sub_titulo}</p>
                         </ul>

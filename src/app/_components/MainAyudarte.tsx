@@ -82,13 +82,13 @@ export const Main = () => {
             <section className='grid_help '>
                 {
                     info?.data.grid_ayudarte.map(e => (
-                        <Tilt key={e.id} className="box_ayudarte background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={500}
+                        <Tilt key={e.id} className="animation_image_style box_ayudarte background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={500}
                             glareEnable={true}
                             glareMaxOpacity={0.45}>
                             <div className='border-box-line-white size_box inner-element' key={e.id}>
                                 <div className='blur_boxes'></div>
 
-                                <p className='g-subtitle-texts appear-left_element'>{e.data}</p>
+                                <p className=' appear-left_element'>{e.data}</p>
 
                                 <div className='div_img appear-left_element'>
                                     <img src={e.img} alt="imagen" />
@@ -100,10 +100,10 @@ export const Main = () => {
                 {
                     info?.data.grid_ayudarte.map(e => (
 
-                        <div className='box_ayudarte border-box-line-white size_box inner-element g-card-animated-mobile' key={e.id}>
+                        <div className='animation_image_style box_ayudarte border-box-line-white size_box inner-element g-card-animated-mobile' key={e.id}>
                             <div className='blur_boxes'></div>
 
-                            <p className='g-subtitle-texts appear-left_element'>{e.data}</p>
+                            <p className=' appear-left_element'>{e.data}</p>
 
                             <div className='div_img appear-left_element'>
                                 <img src={e.img} alt="imagen" />

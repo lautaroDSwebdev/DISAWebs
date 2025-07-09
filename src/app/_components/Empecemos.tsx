@@ -41,7 +41,7 @@ export const Empecemos = () => {
     return (
         <div className='g-padding-top-sections'>
 
-            <section className='section_comencemos '>
+            <section className='section_comencemos animation_image_style'>
                 {/* <div className='blur-ball-comencecemos'></div> */}
 
                 <div id={`${empecemos_id[4]}`} className='div_comencemos g-maxwidth-page'>

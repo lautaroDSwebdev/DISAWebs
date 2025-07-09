@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { langCotext } from '../_context/LanguageContext'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
 export const NavMobile = () => {
     const data = useContext(langCotext)
@@ -21,7 +22,7 @@ export const NavMobile = () => {
                     <img src="logo-pagina-png.png" alt="" />
                 </a>
                 <button onClick={() => setState(!state)}>
-                    <GiHamburgerMenu />
+                    <RxHamburgerMenu />
                 </button>
             </div>
 

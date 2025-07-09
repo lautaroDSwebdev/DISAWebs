@@ -48,7 +48,7 @@ export const HagoRealidadProyectos = () => {
 }, [])
 
   return (
-    <div className='g-padding-top-sections'>
+    <div className='g-padding-top-sections animation_image_style'>
 
       <div id={`${id_comeback[3]}`} className='div_making-reality-projects g-maxwidth-page ' >
         <section className='section_img_reality-projects'>
