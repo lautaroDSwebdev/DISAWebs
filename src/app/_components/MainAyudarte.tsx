@@ -80,7 +80,7 @@ export const Main = () => {
             <h2 className='texto_animado'>¿{info?.data.ayudarte[0]} <i className='text-blue '>{info?.data.ayudarte[1]}</i>?</h2>
             <p className='g-subtitle-texts texto_animado'>{info?.data.ayudarte[2]}</p>
             <section className='grid_help '>
-                {
+                {/* {
                     info?.data.grid_ayudarte.map(e => (
                         <Tilt key={e.id} className="animation_image_style box_ayudarte background-stripes parallax-effect-glare-scale g-card-animated-desk" perspective={500}
                             glareEnable={true}
@@ -96,7 +96,7 @@ export const Main = () => {
                             </div>
                         </Tilt>
                     ))
-                }
+                } */}
                 {
                     info?.data.grid_ayudarte.map(e => (
 
