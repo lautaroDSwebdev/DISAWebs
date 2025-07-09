@@ -14,26 +14,26 @@ export const Empecemos = () => {
     useEffect(() => {
 
 
-        gsap.from(".section_comencemos  ", {
-            scrollTrigger: {
-                trigger: ".section_comencemos  ",
-                // start: 50
-                toggleActions: "restart"
-            },
-            opacity: 0,
-            y: -50,
-            duration: 2,
-        })
-        gsap.to(".section_comencemos  ", {
-            scrollTrigger: {
-                trigger: ".section_comencemos  ",
-                // start: 50
-                toggleActions: "play"
-            },
-            opacity: 1,
-            y: 0,
-            duration: 2,
-        })
+        // gsap.from(".section_comencemos  ", {
+        //     scrollTrigger: {
+        //         trigger: ".section_comencemos  ",
+        //         // start: 50
+        //         toggleActions: "restart"
+        //     },
+        //     opacity: 0,
+        //     y: -50,
+        //     duration: 2,
+        // })
+        // gsap.to(".section_comencemos  ", {
+        //     scrollTrigger: {
+        //         trigger: ".section_comencemos  ",
+        //         // start: 50
+        //         toggleActions: "play"
+        //     },
+        //     opacity: 1,
+        //     y: 0,
+        //     duration: 2,
+        // })
 
 
 

@@ -26,24 +26,24 @@ export const Main = () => {
         //         from: "end"
         //     } // 0.05 seconds between each
         // });
-        gsap.from('.box_ayudarte', {
-            scrollTrigger: {
-                trigger: ".box_ayudarte",
-                toggleActions: "restart"
-            }, // start animation when ".box" enters the viewport
-            x: -80,
-            duration: 2,
-            opacity: 0
-        });
-        gsap.to('.box_ayudarte', {
-            scrollTrigger: {
-                trigger: ".box_ayudarte",
-                toggleActions: "play"
-            }, // start animation when ".box" enters the viewport
-            x: 0,
-            duration: 2,
-            opacity: 1
-        });
+        // gsap.from('.box_ayudarte', {
+        //     scrollTrigger: {
+        //         trigger: ".box_ayudarte",
+        //         toggleActions: "restart"
+        //     }, // start animation when ".box" enters the viewport
+        //     x: -80,
+        //     duration: 2,
+        //     opacity: 0
+        // });
+        // gsap.to('.box_ayudarte', {
+        //     scrollTrigger: {
+        //         trigger: ".box_ayudarte",
+        //         toggleActions: "play"
+        //     }, // start animation when ".box" enters the viewport
+        //     x: 0,
+        //     duration: 2,
+        //     opacity: 1
+        // });
         
         // gsap.from('.appear-left_element', {
         //     scrollTrigger: {
